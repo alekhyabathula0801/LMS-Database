@@ -1,0 +1,15 @@
+CREATE SCHEMA `lms-database`;
+use `lms-database`;
+
+CREATE TABLE `lms-database`.`user_details` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `email` VARCHAR(45) NOT NULL,
+  `first_name` VARCHAR(45) NOT NULL,
+  `last_name` VARCHAR(45) NOT NULL,
+  `password` VARCHAR(45) NOT NULL,
+  `contact_number` VARCHAR(45) NOT NULL,
+  `verified` VARCHAR(45) NOT NULL,
+  `creater_stamp` DATETIME NOT NULL,
+  `creater_user` VARCHAR(45) NOT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE INDEX `email_UNIQUE` (`email` ASC) VISIBLE);
