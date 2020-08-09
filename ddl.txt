@@ -13,3 +13,28 @@ CREATE TABLE `lms-database`.`user_details` (
   `creater_user` VARCHAR(45) NOT NULL,
   PRIMARY KEY (`id`),
   UNIQUE INDEX `email_UNIQUE` (`email` ASC) VISIBLE);
+
+
+CREATE TABLE `hired_candidate` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `first_name` VARCHAR(45) NOT NULL,
+  `middle_name` VARCHAR(45) NULL,
+  `last_name` VARCHAR(45) NOT NULL,
+  `email_id` VARCHAR(45) NOT NULL,
+  `degree` VARCHAR(45) NOT NULL,
+  `hired_city` VARCHAR(45) NOT NULL,
+  `hired_date` DATE NOT NULL,
+  `mobile_number` VARCHAR(45) NOT NULL,
+  `permanent_pincode` VARCHAR(45) NOT NULL,
+  `hired_lab` VARCHAR(45) NOT NULL,
+  `attitude` VARCHAR(45) NOT NULL,
+  `communication_remark` VARCHAR(45) NOT NULL,
+  `knowledge_remark` VARCHAR(45) NOT NULL,
+  `aggregate_remark` VARCHAR(45) NOT NULL,
+  `status` VARCHAR(45) NOT NULL DEFAULT 'Didn\'t Respond',
+  `creator_stamp` DATETIME NOT NULL,
+  `creator_user` VARCHAR(45) NOT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE INDEX `email_id_UNIQUE` (`email_id` ASC) VISIBLE);
+
+
