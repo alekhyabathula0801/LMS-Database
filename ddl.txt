@@ -38,3 +38,13 @@ CREATE TABLE `hired_candidate` (
   UNIQUE INDEX `email_id_UNIQUE` (`email_id` ASC) VISIBLE);
 
 
+CREATE TABLE `company` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `name` VARCHAR(45) NOT NULL,
+  `address` VARCHAR(100) NOT NULL,
+  `location` VARCHAR(100) NOT NULL,
+  `status` VARCHAR(45) NOT NULL,
+  `creator_stamp` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `creator_user` VARCHAR(45) NOT NULL,
+  PRIMARY KEY (`id`));
+
