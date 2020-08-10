@@ -215,6 +215,43 @@ CREATE TABLE `lms-database`.`mentor` (
     ON DELETE NO ACTION
     ON UPDATE NO ACTION);
 
+CREATE TABLE `lms-database`.`mentor_ideation_map` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `mentor_id` INT NOT NULL,
+  `status` VARCHAR(45) NOT NULL,
+  `creator_stamp` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `creator_user` VARCHAR(45) NOT NULL,
+  PRIMARY KEY (`id`),
+  INDEX `fk_mentor_id_mentor_ideation_map_idx` (`mentor_id` ASC) VISIBLE,
+  CONSTRAINT `fk_mentor_id_mentor_ideation_map`
+    FOREIGN KEY (`mentor_id`)
+    REFERENCES `lms-database`.`mentor` (`id`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION);
+
+
+CREATE TABLE `lms-database`.`mentor_tech_stack` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `mentor_id` INT NOT NULL,
+  `tech_stack_id` INT NOT NULL,
+  `status` VARCHAR(45) NOT NULL,
+  `creator_stamp` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `creator_user` VARCHAR(45) NOT NULL,
+  PRIMARY KEY (`id`),
+  INDEX `fk_mentor_id_mentor_tech_stack_idx` (`mentor_id` ASC) VISIBLE,
+  INDEX `fk_tech_stack_id_mentor_tech_stack_idx` (`tech_stack_id` ASC) VISIBLE,
+  CONSTRAINT `fk_mentor_id_mentor_tech_stack`
+    FOREIGN KEY (`mentor_id`)
+    REFERENCES `lms-database`.`mentor` (`id`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT `fk_tech_stack_id_mentor_tech_stack`
+    FOREIGN KEY (`tech_stack_id`)
+    REFERENCES `lms-database`.`tech_stack` (`id`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION);
+
+
 
 CREATE TABLE `lms-database`.`tech_stack` (
   `id` INT NOT NULL,
