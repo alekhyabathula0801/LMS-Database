@@ -98,6 +98,23 @@ CREATE TABLE `candidate_bank_details` (
     ON DELETE NO ACTION
     ON UPDATE NO ACTION);
 
+CREATE TABLE `lms-database`.`candidate_documents` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `candidate_id` INT NOT NULL,
+  `document_type` VARCHAR(45) NOT NULL,
+  `document_path` VARCHAR(45) NOT NULL,
+  `status` VARCHAR(45) NOT NULL DEFAULT 'Pending',
+  `creator_stamp` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `creator_user` VARCHAR(45) NOT NULL,
+  PRIMARY KEY (`id`),
+  INDEX `fk_candidate_id_documents_idx` (`candidate_id` ASC) VISIBLE,
+  UNIQUE INDEX `candidate_id_UNIQUE` (`candidate_id` ASC) VISIBLE,
+  CONSTRAINT `fk_candidate_id_documents`
+    FOREIGN KEY (`candidate_id`)
+    REFERENCES `lms-database`.`fellowship_candidate` (`id`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION);
+
 
 CREATE TABLE `company` (
   `id` INT NOT NULL AUTO_INCREMENT,
