@@ -11,3 +11,8 @@ INSERT INTO `hired_candidate` (`first_name`, `last_name`, `email_id`, `degree`, 
 INSERT INTO `lms-database`.`tech_stack` (`id`, `tech_name`, `image_path`, `framework`, `current_status`, `creator_user`) VALUES ('1', 'Java', 'NA', 'Spring', 'active', 'Alekhya');
 INSERT INTO `lms-database`.`tech_stack` (`id`, `tech_name`, `image_path`, `framework`, `current_status`, `creator_user`) VALUES ('2', 'PHP', 'NA', 'Laravel', 'active', 'ALekhya');
 INSERT INTO `lms-database`.`tech_stack` (`id`, `tech_name`, `image_path`, `framework`, `current_status`, `creator_user`) VALUES ('3', 'Python', 'NA', 'Django', 'active', 'Alekhya');
+
+
+INSERT INTO `lms-database`.`lab` (`id`, `name`, `location`, `address`, `status`, `creator_user`) VALUES ('1', 'Lab1', 'Mumbai', 'Malhotra', 'active', 'Alekhya');
+INSERT INTO `lms-database`.`lab` (`id`, `name`, `location`, `address`, `status`, `creator_user`) VALUES ('2', 'Lab2', 'Mumbai', 'Sai Samarth', 'active', 'Alekhya');
+INSERT INTO `lms-database`.`lab` (`id`, `name`, `location`, `address`, `status`, `creator_user`) VALUES ('3', 'Lab3', 'Bangalore', 'HSR Layout sectot 4', 'active', 'Alekhya');
