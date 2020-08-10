@@ -126,3 +126,12 @@ CREATE TABLE `company` (
   `creator_user` VARCHAR(45) NOT NULL,
   PRIMARY KEY (`id`));
 
+CREATE TABLE `lms-database`.`tech_stack` (
+  `id` INT NOT NULL,
+  `tech_name` VARCHAR(45) NOT NULL,
+  `image_path` VARCHAR(45) NOT NULL,
+  `framework` VARCHAR(45) NOT NULL,
+  `current_status` VARCHAR(45) NOT NULL,
+  `creator_stamp` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `creator_user` VARCHAR(45) NOT NULL,
+  PRIMARY KEY (`id`));
