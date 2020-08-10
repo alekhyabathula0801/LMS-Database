@@ -75,6 +75,29 @@ CREATE TABLE `fellowship_candidate` (
   PRIMARY KEY (`id`),
   UNIQUE INDEX `email_id_UNIQUE` (`email_id` ASC) VISIBLE);
 
+CREATE TABLE `candidate_bank_details` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `candidate_id` INT NOT NULL,
+  `name` VARCHAR(45) NOT NULL,
+  `account_number` VARCHAR(45) NOT NULL,
+  `is_account_num_verified` VARCHAR(45) NOT NULL DEFAULT 'false',
+  `ifsc_code` VARCHAR(45) NOT NULL,
+  `is_ifsc_code_verified` VARCHAR(45) NOT NULL DEFAULT 'false',
+  `pan_number` VARCHAR(45) NOT NULL,
+  `is_pan_number_verified` VARCHAR(45) NOT NULL DEFAULT 'false',
+  `aadhaar_num` VARCHAR(45) NOT NULL,
+  `is_aadhaar_num_verified` VARCHAR(45) NOT NULL DEFAULT 'false',
+  `creator_stamp` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `creator_user` VARCHAR(45) NOT NULL,
+  PRIMARY KEY (`id`),
+  INDEX `fk_candidate_id_idx` (`candidate_id` ASC) VISIBLE,
+  UNIQUE INDEX `candidate_id_UNIQUE` (`candidate_id` ASC) VISIBLE,
+  CONSTRAINT `fk_candidate_id`
+    FOREIGN KEY (`candidate_id`)
+    REFERENCES `lms-database`.`fellowship_candidate` (`id`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION);
+
 
 CREATE TABLE `company` (
   `id` INT NOT NULL AUTO_INCREMENT,
