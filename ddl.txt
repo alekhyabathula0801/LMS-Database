@@ -263,6 +263,16 @@ CREATE TABLE `lms-database`.`tech_stack` (
   `creator_user` VARCHAR(45) NOT NULL,
   PRIMARY KEY (`id`));
 
+
+CREATE TABLE `lms-database`.`tech_type` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `type_name` VARCHAR(45) NOT NULL,
+  `current_status` VARCHAR(45) NOT NULL,
+  `creator_stamp` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `creator_user` VARCHAR(45) NOT NULL,
+  PRIMARY KEY (`id`));
+
+
  CREATE TABLE `lms-database`.`lab` (
   `id` INT NOT NULL AUTO_INCREMENT,
   `name` VARCHAR(45) NOT NULL,
@@ -274,11 +284,82 @@ CREATE TABLE `lms-database`.`tech_stack` (
   PRIMARY KEY (`id`));
 
 
-CREATE TABLE `lms-database`.`tech_type` (
+CREATE TABLE `lms-database`.`lab_threshold` (
   `id` INT NOT NULL AUTO_INCREMENT,
-  `type_name` VARCHAR(45) NOT NULL,
-  `current_status` VARCHAR(45) NOT NULL,
+  `lab_id` INT NOT NULL,
+  `lab_capacity` INT NOT NULL,
+  `lead_threshold` INT NOT NULL,
+  `ideation_engineer_threshold` INT NOT NULL,
+  `buddy_engineer_threshold` INT NOT NULL,
+  `status` VARCHAR(45) NOT NULL DEFAULT 'Active',
   `creator_stamp` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `creator_user` VARCHAR(45) NOT NULL,
-  PRIMARY KEY (`id`));
+  PRIMARY KEY (`id`),
+  INDEX `fk_lab_id_lab_threshold_idx` (`lab_id` ASC) VISIBLE,
+  CONSTRAINT `fk_lab_id_lab_threshold`
+    FOREIGN KEY (`lab_id`)
+    REFERENCES `lms-database`.`lab` (`id`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION);
+
+CREATE TABLE `lms-database`.`company_requirement` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `company_id` INT NOT NULL,
+  `requested_month` VARCHAR(15) NOT NULL,
+  `city` VARCHAR(20) NOT NULL,
+  `is_document_verified` TINYINT NOT NULL DEFAULT 0,
+  `requirement_document_path` VARCHAR(100) NOT NULL,
+  `number_of_engineer` INT NOT NULL,
+  `tech_stack_id` INT NOT NULL,
+  `tech_type_id` INT NOT NULL,
+  `maker_program_id` INT NOT NULL,
+  `lead_id` INT NOT NULL,
+  `ideation_engineer_id` INT NOT NULL,
+  `buddy_engineer_id` INT NOT NULL,
+  `special_remark` VARCHAR(45) NOT NULL,
+  `creator_stamp` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `creator_user` VARCHAR(45) NOT NULL,
+  PRIMARY KEY (`id`),
+  INDEX `fk_company_id_company_idx` (`company_id` ASC) VISIBLE,
+  INDEX `fk_tech_stack_id_company_requirement_idx` (`tech_stack_id` ASC) VISIBLE,
+  INDEX `fk_tech_type_id_company_requirement_idx` (`tech_type_id` ASC) VISIBLE,
+  INDEX `fk_maker_program_id_company_requirement_idx` (`maker_program_id` ASC) VISIBLE,
+  INDEX `fk_lead_id_company_requirement_idx` (`lead_id` ASC) VISIBLE,
+  INDEX `fk_ideation_id_company_requirement_idx` (`ideation_engineer_id` ASC) VISIBLE,
+  INDEX `fk_buddy_engineer_company_requirement_idx` (`buddy_engineer_id` ASC) VISIBLE,
+  CONSTRAINT `fk_company_id_company_requirement`
+    FOREIGN KEY (`company_id`)
+    REFERENCES `lms-database`.`company` (`id`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT `fk_tech_stack_id_company_requirement`
+    FOREIGN KEY (`tech_stack_id`)
+    REFERENCES `lms-database`.`tech_stack` (`id`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT `fk_tech_type_id_company_requirement`
+    FOREIGN KEY (`tech_type_id`)
+    REFERENCES `lms-database`.`tech_type` (`id`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT `fk_maker_program_id_company_requirement`
+    FOREIGN KEY (`maker_program_id`)
+    REFERENCES `lms-database`.`maker_program` (`id`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT `fk_lead_id_company_requirement`
+    FOREIGN KEY (`lead_id`)
+    REFERENCES `lms-database`.`mentor` (`id`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT `fk_ideation_id_company_requirement`
+    FOREIGN KEY (`ideation_engineer_id`)
+    REFERENCES `lms-database`.`mentor` (`id`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT `fk_buddy_engineer_company_requirement`
+    FOREIGN KEY (`buddy_engineer_id`)
+    REFERENCES `lms-database`.`mentor` (`id`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION);
 
