@@ -370,3 +370,24 @@ CREATE TABLE `lms-database`.`company_requirement` (
     ON DELETE NO ACTION
     ON UPDATE NO ACTION);
 
+CREATE TABLE `lms-database`.`candidate_stack_assignment` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `requirement_id` INT NOT NULL,
+  `candidate_id` INT NOT NULL,
+  `assign_date` DATE NOT NULL,
+  `status` VARCHAR(15) NOT NULL DEFAULT 'Active',
+  `creator_stamp` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `creator_user` VARCHAR(45) NOT NULL,
+  PRIMARY KEY (`id`),
+  INDEX `fk_requirement_id_company_stack_assignment_idx` (`requirement_id` ASC) VISIBLE,
+  INDEX `fk_candidate_id_company_stack_assignment_idx` (`candidate_id` ASC) VISIBLE,
+  CONSTRAINT `fk_requirement_id_company_stack_assignment`
+    FOREIGN KEY (`requirement_id`)
+    REFERENCES `lms-database`.`company_requirement` (`id`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT `fk_candidate_id_company_stack_assignment`
+    FOREIGN KEY (`candidate_id`)
+    REFERENCES `lms-database`.`fellowship_candidate` (`id`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION);
