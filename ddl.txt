@@ -185,6 +185,37 @@ CREATE TABLE `lms-database`.`maker_program` (
     ON UPDATE NO ACTION);
 
 
+CREATE TABLE `lms-database`.`app_parameters` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `key_type` VARCHAR(45) NOT NULL,
+  `key_value` VARCHAR(45) NOT NULL,
+  `key_text` VARCHAR(45) NOT NULL,
+  `current_status` VARCHAR(45) NOT NULL,
+  `last_updated_user` VARCHAR(45) NOT NULL,
+  `last_updated_stamp` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  `creator_stamp` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `creator_user` VARCHAR(45) NOT NULL,
+  `sequence_number` INT NOT NULL,
+  PRIMARY KEY (`id`));
+
+
+CREATE TABLE `lms-database`.`mentor` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `name` VARCHAR(45) NOT NULL,
+  `mentor_type` VARCHAR(45) NOT NULL,
+  `lab_id` INT NOT NULL,
+  `status` VARCHAR(45) NOT NULL,
+  `creator_stamp` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `creator_user` VARCHAR(45) NOT NULL,
+  PRIMARY KEY (`id`),
+  INDEX `fk_lab_id_mentor_idx` (`lab_id` ASC) VISIBLE,
+  CONSTRAINT `fk_lab_id_mentor`
+    FOREIGN KEY (`lab_id`)
+    REFERENCES `lms-database`.`lab` (`id`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION);
+
+
 CREATE TABLE `lms-database`.`tech_stack` (
   `id` INT NOT NULL,
   `tech_name` VARCHAR(45) NOT NULL,
