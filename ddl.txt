@@ -38,6 +38,44 @@ CREATE TABLE `hired_candidate` (
   UNIQUE INDEX `email_id_UNIQUE` (`email_id` ASC) VISIBLE);
 
 
+CREATE TABLE `fellowship_candidate` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `first_name` VARCHAR(45) NOT NULL,
+  `middle_name` VARCHAR(45) NULL,
+  `last_name` VARCHAR(45) NOT NULL,
+  `email_id` VARCHAR(45) NOT NULL,
+  `degree` VARCHAR(45) NOT NULL,
+  `hired_city` VARCHAR(45) NOT NULL,
+  `hired_date` DATE NOT NULL,
+  `mobile_number` VARCHAR(45) NOT NULL,
+  `permanent_pincode` INT NOT NULL,
+  `hired_lab` VARCHAR(45) NOT NULL,
+  `attitude` VARCHAR(45) NOT NULL,
+  `communication_remark` VARCHAR(45) NOT NULL,
+  `knowledge_remark` VARCHAR(45) NOT NULL,
+  `aggregate_remark` VARCHAR(45) NOT NULL,
+  `creator_stamp` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `creator_user` VARCHAR(45) NOT NULL,
+  `birth_date` DATE NOT NULL,
+  `is_birth_date_verified` VARCHAR(45) NOT NULL DEFAULT 'false',
+  `parent_name` VARCHAR(45) NOT NULL,
+  `parent_occupation` VARCHAR(45) NOT NULL,
+  `parents_mobile_number` VARCHAR(45) NOT NULL,
+  `parents_annual_salary` INT NOT NULL,
+  `local_address` VARCHAR(150) NOT NULL,
+  `permanent_address` VARCHAR(150) NOT NULL,
+  `photo_path` VARCHAR(100) NOT NULL,
+  `joining_date` DATE NOT NULL,
+  `candidate_status` VARCHAR(45) NOT NULL DEFAULT 'Pending',
+  `personal_information` VARCHAR(150) NULL,
+  `bank_information` VARCHAR(45) NULL,
+  `educational_information` VARCHAR(45) NULL,
+  `document_status` VARCHAR(45) NULL,
+  `remark` VARCHAR(45) NOT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE INDEX `email_id_UNIQUE` (`email_id` ASC) VISIBLE);
+
+
 CREATE TABLE `company` (
   `id` INT NOT NULL AUTO_INCREMENT,
   `name` VARCHAR(45) NOT NULL,
