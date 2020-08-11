@@ -175,3 +175,9 @@ FROM fellowship_candidate
 LEFT JOIN candidate_stack_assignment
 ON fellowship_candidate.id = candidate_stack_assignment.candidate_id
 WHERE candidate_stack_assignment.candidate_id IS NULL;
+
+-- query to find joining date of candidate id = 4
+
+SELECT fellowship_candidate.joining_date
+FROM fellowship_candidate
+WHERE fellowship_candidate.id = 4;
