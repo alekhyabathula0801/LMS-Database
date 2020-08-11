@@ -20,6 +20,15 @@ INSERT INTO `lms-database`.`fellowship_candidate` (`first_name`, `last_name`, `e
 	VALUES ('vinod', 'kumar', 'vinod@gmail.com', 'MCA', 'Goa', '2019:12:20', '2121212121', '231654', 'Lab1', 'OK', 'OK', 'OK', 'OK', 'Alekhya', '1997:08:08', 'david', 'Teacher', '1212121212', '400000', 'srinagar', 'srinagar', 'path', '2020:01:01', 'OK');
 INSERT INTO `lms-database`.`fellowship_candidate` (`first_name`, `last_name`, `email_id`, `degree`, `hired_city`, `hired_date`, `mobile_number`, `permanent_pincode`, `hired_lab`, `attitude`, `communication_remark`, `knowledge_remark`, `aggregate_remark`, `creator_user`, `birth_date`, `parent_name`, `parent_occupation`, `parents_mobile_number`, `parents_annual_salary`, `local_address`, `permanent_address`, `photo_path`, `joining_date`, `remark`) 
 	VALUES ('Akshay', 'kumar', 'akshay@gmail.com', 'MCA', 'Bangalore', '2020:2:27', '7778889990', '908765', 'Lab3', 'OK', 'OK', 'OK', 'OK', 'Alekhya', '1998:01:06', 'rahul', 'Doctor', '5454545454', '700000', 'sai nagar', 'sai nagar', 'path', '2020:03:29', 'OK');
+INSERT INTO `lms-database`.`fellowship_candidate` (`first_name`, `last_name`, `email_id`, `degree`, `hired_city`, `hired_date`, `mobile_number`, `permanent_pincode`,
+ `hired_lab`, `attitude`, `communication_remark`, `knowledge_remark`, `aggregate_remark`, `creator_user`, `birth_date`, `parent_name`, `parent_occupation`, 
+ `parents_mobile_number`, `parents_annual_salary`, `local_address`, `permanent_address`, `photo_path`, `joining_date`, `candidate_status`, `remark`) 
+ VALUES ('Madhu', 'vayya', 'madhu@gmail.coom', 'ME', 'Hyderabad', '2020-04-15', '4544454545', '454545', 'Lab2', 'OK', 'OK', 'OK', 'OK', 'Alekhya', '1996-02-12', 
+ 'rakesh', 'Teacher', '2323232329', '500000', 'sr nagar', 'sr nagar', 'path', '2020-04-29', 'Pending', 'OK');
+UPDATE `lms-database`.`fellowship_candidate` SET `candidate_status` = 'Verified' WHERE (`id` = '1');
+UPDATE `lms-database`.`fellowship_candidate` SET `candidate_status` = 'Verified' WHERE (`id` = '2');
+UPDATE `lms-database`.`fellowship_candidate` SET `candidate_status` = 'Verified' WHERE (`id` = '3');
+UPDATE `lms-database`.`fellowship_candidate` SET `candidate_status` = 'Verified' WHERE (`id` = '4');
 
 
 INSERT INTO `lms-database`.`candidate_bank_details` (`candidate_id`, `name`, `account_number`, `ifsc_code`, `pan_number`, `aadhaar_num`, `creator_user`) 
@@ -181,3 +190,11 @@ WHERE candidate_stack_assignment.candidate_id IS NULL;
 SELECT fellowship_candidate.joining_date
 FROM fellowship_candidate
 WHERE fellowship_candidate.id = 4;
+
+-- query to select candidates who didn't submit documents
+
+SELECT fellowship_candidate.first_name
+FROM fellowship_candidate
+LEFT JOIN candidate_documents
+ON fellowship_candidate.id = candidate_documents.candidate_id
+WHERE candidate_documents.candidate_id IS NULL;
