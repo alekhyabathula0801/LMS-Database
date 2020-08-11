@@ -264,3 +264,11 @@ FROM fellowship_candidate
 JOIN candidate_stack_assignment
 ON fellowship_candidate.id = candidate_stack_assignment.candidate_id
 WHERE date_format(candidate_stack_assignment.assign_date,'%m') = 8;
+
+-- query to find candidates whose course end in a month  
+
+SELECT * 
+FROM fellowship_candidate
+JOIN candidate_stack_assignment
+ON fellowship_candidate.id = candidate_stack_assignment.candidate_id
+WHERE datediff(candidate_stack_assignment.assign_date,curdate()) BETWEEN 0 AND 30;
