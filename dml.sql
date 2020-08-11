@@ -167,3 +167,11 @@ ON candidate_stack_assignment.requirement_id = company_requirement.id
 JOIN tech_stack
 ON company_requirement.tech_stack_id = tech_stack.id
 WHERE fellowship_candidate.degree = 'MCA';
+
+-- query to find candidates whose technology is not assigned
+
+SELECT fellowship_candidate.first_name
+FROM fellowship_candidate
+LEFT JOIN candidate_stack_assignment
+ON fellowship_candidate.id = candidate_stack_assignment.candidate_id
+WHERE candidate_stack_assignment.candidate_id IS NULL;
