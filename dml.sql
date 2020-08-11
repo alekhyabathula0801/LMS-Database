@@ -267,8 +267,14 @@ WHERE date_format(candidate_stack_assignment.assign_date,'%m') = 8;
 
 -- query to find candidates whose course end in a month  
 
-SELECT * 
+SELECT fellowship_candidate.first_name 
 FROM fellowship_candidate
 JOIN candidate_stack_assignment
 ON fellowship_candidate.id = candidate_stack_assignment.candidate_id
 WHERE datediff(candidate_stack_assignment.assign_date,curdate()) BETWEEN 0 AND 30;
+
+-- query to find number of weeks completed bu candidate id = 2
+
+SELECT first_name, datediff(curdate(),joining_date) DIV 7 AS weeks_completed 
+FROM fellowship_candidate
+WHERE id = 2;
