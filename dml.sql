@@ -138,7 +138,6 @@ JOIN tech_stack
 ON company_requirement.tech_stack_id = tech_stack.id
 WHERE tech_stack.tech_name='Java';
 
-
 -- query to find mentors with java technology
 
 SELECT mentor.name
@@ -149,3 +148,10 @@ JOIN tech_stack
 ON mentor_tech_stack.tech_stack_id = tech_stack.id
 WHERE tech_stack.tech_name = "Java";
 
+-- query to find candidates who are 2019 passed out
+
+SELECT fellowship_candidate.first_name
+FROM fellowship_candidate 
+JOIN candidate_qualification
+ON fellowship_candidate.id = candidate_qualification.candidate_id
+WHERE candidate_qualification.passing_year = 2019;
