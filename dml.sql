@@ -29,6 +29,11 @@ UPDATE `lms-database`.`fellowship_candidate` SET `candidate_status` = 'Verified'
 UPDATE `lms-database`.`fellowship_candidate` SET `candidate_status` = 'Verified' WHERE (`id` = '2');
 UPDATE `lms-database`.`fellowship_candidate` SET `candidate_status` = 'Verified' WHERE (`id` = '3');
 UPDATE `lms-database`.`fellowship_candidate` SET `candidate_status` = 'Verified' WHERE (`id` = '4');
+INSERT INTO `lms-database`.`fellowship_candidate` (`first_name`, `last_name`, `email_id`, `degree`, `hired_city`, `hired_date`, `mobile_number`, `permanent_pincode`,
+ `hired_lab`, `attitude`, `communication_remark`, `knowledge_remark`, `aggregate_remark`, `creator_user`, `birth_date`, `is_birth_date_verified`, `parent_name`,
+ `parent_occupation`, `parents_mobile_number`, `parents_annual_salary`, `local_address`, `permanent_address`, `photo_path`, `joining_date`, `candidate_status`,`remark`) 
+ VALUES ('Kalyani', 'tahe', 'kalyani@gmail.com', 'BE', 'Malhotra', '2019-12-01', '7878786767', '876678', 'Lab3', 'OK', 'OK', 'OK', 'OK', 'Alekhya', '1997-04-08', '1',
+ 'kalyan', 'Doctor', '1233214554', '800000', 'malhotra', 'malhotra', 'path', '2019-12-15', 'Verified', 'OK');
 
 
 INSERT INTO `lms-database`.`candidate_bank_details` (`candidate_id`, `name`, `account_number`, `ifsc_code`, `pan_number`, `aadhaar_num`, `creator_user`) 
@@ -39,6 +44,17 @@ INSERT INTO `lms-database`.`candidate_bank_details` (`candidate_id`, `name`, `ac
 	VALUES ('3', 'Vinod', '1249764167238', 'ZHB67GSH7', 'AD21783SX1837', '232613527212', 'Alekhya');
 INSERT INTO `lms-database`.`candidate_bank_details` (`candidate_id`, `name`, `account_number`, `ifsc_code`, `pan_number`, `aadhaar_num`, `creator_user`) 
 	VALUES ('4', 'Akshay', '12739HJB12379', 'AS656476A789', 'AHS364XSY2138', '216351326832', 'Alekyha');
+INSERT INTO `lms-database`.`candidate_bank_details` (`candidate_id`, `name`, `account_number`, `is_account_num_verified`, `ifsc_code`, `is_ifsc_code_verified`, 
+`pan_number`, `is_pan_number_verified`, `aadhaar_num`, `is_aadhaar_num_verified`, `creator_user`) 
+VALUES ('6', 'Kalyani', 'SA2189DE47329', '1', 'JH812749837', '1', 'KJ98235879G87', '1', '2184714H3984', '1', 'Alekhya');
+UPDATE `lms-database`.`candidate_bank_details` SET `is_account_num_verified` = '1', `is_ifsc_code_verified` = '1', `is_pan_number_verified` = '1', 
+	`is_aadhaar_num_verified` = '1' WHERE (`id` = '1');
+UPDATE `lms-database`.`candidate_bank_details` SET `is_account_num_verified` = '1', `is_ifsc_code_verified` = '1', `is_pan_number_verified` = '1', 
+	`is_aadhaar_num_verified` = '1' WHERE (`id` = '2');
+UPDATE `lms-database`.`candidate_bank_details` SET `is_account_num_verified` = '1', `is_ifsc_code_verified` = '1', `is_pan_number_verified` = '1', 
+	`is_aadhaar_num_verified` = '1' WHERE (`id` = '3');
+UPDATE `lms-database`.`candidate_bank_details` SET `is_account_num_verified` = '1', `is_ifsc_code_verified` = '1', `is_pan_number_verified` = '1', 
+	`is_aadhaar_num_verified` = '1' WHERE (`id` = '4');
 
 
 INSERT INTO `lms-database`.`candidate_qualification` (`candidate_id`, `degree_name`, `employee_discipline`, `passing_year`, `final_year_percentage`, `training_institute`, `training_duration_month`, `other_training`, `creator_user`) 
@@ -49,12 +65,26 @@ INSERT INTO `lms-database`.`candidate_qualification` (`candidate_id`, `degree_na
 	VALUES ('3', 'MCA', 'COMPUTERS', '2020', '79', 'NA', 'NA', 'NA', 'Alekhya');
 INSERT INTO `lms-database`.`candidate_qualification` (`candidate_id`, `degree_name`, `employee_discipline`, `passing_year`, `final_year_percentage`, `training_institute`, `training_duration_month`, `other_training`, `creator_user`) 
 	VALUES ('4', 'MCA', 'COMPUTERS', '2017', '80', 'NA', 'NA', 'NA', 'Alekhya');
+INSERT INTO `lms-database`.`candidate_qualification` (`candidate_id`, `degree_name`, `is_degree_name_verified`, `employee_discipline`, 
+`is_employee_discipline_verified`, `passing_year`, `is_passing_year_verified`, `final_year_percentage`, `is_final_year_percentage_verified`, `training_institute`, 
+`is_training_institute_verified`, `training_duration_month`, `is_training_duration_month_verified`, `other_training`, `is_other_training_verified`, `creator_user`) 
+VALUES ('6', 'BE', '1', 'MECH', '1', '2019', '1', '78', '1', 'NA', '1', 'NA', '1', 'NA', '1', 'Alekhya');
+UPDATE `lms-database`.`candidate_qualification` SET `is_degree_name_verified` = '1', `is_employee_discipline_verified` = '1', `is_passing_year_verified` = '1', `is_final_year_percentage_verified` = '1', `is_training_institute_verified` = '1', `is_training_duration_month_verified` = '1', `is_other_training_verified` = '1' WHERE (`id` = '4');
+UPDATE `lms-database`.`candidate_qualification` SET `is_degree_name_verified` = '1', `is_employee_discipline_verified` = '1', `is_passing_year_verified` = '1', `is_final_year_percentage_verified` = '1', `is_training_institute_verified` = '1', `is_training_duration_month_verified` = '1', `is_other_training_verified` = '1' WHERE (`id` = '3');
+UPDATE `lms-database`.`candidate_qualification` SET `is_degree_name_verified` = '1', `is_employee_discipline_verified` = '1', `is_passing_year_verified` = '1', `is_final_year_percentage_verified` = '1', `is_training_institute_verified` = '1', `is_training_duration_month_verified` = '1', `is_other_training_verified` = '1' WHERE (`id` = '1');
+UPDATE `lms-database`.`candidate_qualification` SET `is_degree_name_verified` = '1', `is_employee_discipline_verified` = '1', `is_passing_year_verified` = '1', `is_final_year_percentage_verified` = '1', `is_training_institute_verified` = '1', `is_training_duration_month_verified` = '1', `is_other_training_verified` = '1' WHERE (`id` = '2');
 
 
 INSERT INTO `lms-database`.`candidate_documents` (`candidate_id`, `document_type`, `document_path`, `creator_user`) VALUES ('1', 'certificate', 'path', 'Alekhya');
 INSERT INTO `lms-database`.`candidate_documents` (`candidate_id`, `document_type`, `document_path`, `creator_user`) VALUES ('2', 'certificate', 'path', 'Alekhya');
 INSERT INTO `lms-database`.`candidate_documents` (`candidate_id`, `document_type`, `document_path`, `creator_user`) VALUES ('3', 'certificate', 'path', 'Alekhya');
 INSERT INTO `lms-database`.`candidate_documents` (`candidate_id`, `document_type`, `document_path`, `creator_user`) VALUES ('4', 'certificate', 'path', 'Alekhya');
+INSERT INTO `lms-database`.`candidate_documents` (`candidate_id`, `document_type`, `document_path`, `status`, `creator_user`) 
+	VALUES ('6', 'certificate', 'path', 'Verified', 'Alekhya');
+UPDATE `lms-database`.`candidate_documents` SET `status` = 'Verified' WHERE (`id` = '1');
+UPDATE `lms-database`.`candidate_documents` SET `status` = 'Verified' WHERE (`id` = '2');
+UPDATE `lms-database`.`candidate_documents` SET `status` = 'Verified' WHERE (`id` = '3');
+UPDATE `lms-database`.`candidate_documents` SET `status` = 'Verified' WHERE (`id` = '4');
 
 
 INSERT INTO `lms-database`.`company` (`name`, `address`, `location`, `creator_user`) VALUES ('Vinuculam', 'Bangalore', 'srinagar', 'Alekhya');
@@ -149,7 +179,7 @@ WHERE tech_stack.tech_name='Java';
 
 -- query to find mentors with java technology
 
-SELECT mentor.name
+SELECT mentor.name,mentor.mentor_type,tech_stack.tech_name
 FROM mentor 
 JOIN mentor_tech_stack
 ON mentor.id = mentor_tech_stack.mentor_id
@@ -206,3 +236,9 @@ FROM fellowship_candidate
 LEFT JOIN candidate_bank_details
 ON fellowship_candidate.id = candidate_bank_details.candidate_id
 WHERE candidate_bank_details.candidate_id IS NULL;
+
+-- query to find candidates joined in december
+
+SELECT fellowship_candidate.first_name
+FROM fellowship_candidate
+WHERE date_format(joining_date,'%m') = 12;
