@@ -155,3 +155,15 @@ FROM fellowship_candidate
 JOIN candidate_qualification
 ON fellowship_candidate.id = candidate_qualification.candidate_id
 WHERE candidate_qualification.passing_year = 2019;
+
+-- query to find technology assigned for candidates with MCA degree  
+
+SELECT fellowship_candidate.first_name, tech_stack.tech_name
+FROM fellowship_candidate
+JOIN candidate_stack_assignment
+ON fellowship_candidate.id = candidate_stack_assignment.candidate_id
+JOIN company_requirement
+ON candidate_stack_assignment.requirement_id = company_requirement.id
+JOIN tech_stack
+ON company_requirement.tech_stack_id = tech_stack.id
+WHERE fellowship_candidate.degree = 'MCA';
