@@ -156,14 +156,17 @@ INSERT INTO `lms-database`.`lab_threshold` (`lab_id`, `lab_capacity`, `lead_thre
 
 INSERT INTO `lms-database`.`company_requirement` (`company_id`, `requested_month`, `city`, `requirement_document_path`, `number_of_engineer`, `tech_stack_id`, 
 	`tech_type_id`, `maker_program_id`, `lead_id`, `ideation_engineer_id`, `buddy_engineer_id`, `special_remark`, `creator_user`) 
-	VALUES ('1', 'September', 'Mumbai', 'path', '10', '1', '2', '1', '1', '2', '3', 'OK', 'Alekhya');
+	VALUES ('1', '2020-09-02', 'Mumbai', 'path', '10', '1', '2', '1', '1', '2', '3', 'OK', 'Alekhya');
 INSERT INTO `lms-database`.`company_requirement` (`company_id`, `requested_month`, `city`, `requirement_document_path`, `number_of_engineer`, `tech_stack_id`, 
 `tech_type_id`, `maker_program_id`, `lead_id`, `ideation_engineer_id`, `buddy_engineer_id`, `special_remark`, `creator_user`) 
-VALUES ('1', 'August', 'Bangalore', 'path', '5', '3', '1', '2', '4', '5', '6', 'OK', 'Alekhya');
+VALUES ('1', '2020-08-29', 'Bangalore', 'path', '5', '3', '1', '2', '4', '5', '6', 'OK', 'Alekhya');
+UPDATE `lms-database`.`company_requirement` SET `is_document_verified` = '1' WHERE (`id` = '1');
+UPDATE `lms-database`.`company_requirement` SET `is_document_verified` = '1' WHERE (`id` = '2');
 
 INSERT INTO `lms-database`.`candidate_stack_assignment` (`requirement_id`, `candidate_id`, `assign_date`, `creator_user`) VALUES ('1', '1', '2020:03:05', 'Alekhya');
 INSERT INTO `lms-database`.`candidate_stack_assignment` (`requirement_id`, `candidate_id`, `assign_date`, `creator_user`) VALUES ('1', '2', '2020-03-05', 'Alekhya');
 INSERT INTO `lms-database`.`candidate_stack_assignment` (`requirement_id`, `candidate_id`, `assign_date`, `creator_user`) VALUES ('2', '3', '2020_04-05', 'Alekhya');
+INSERT INTO `lms-database`.`candidate_stack_assignment` (`requirement_id`, `candidate_id`, `assign_date`, `creator_user`) VALUES ('1', '6', '2020-01-01', 'Alekhya');
 
 -- query to select candidates assigned java technology
 
@@ -242,3 +245,14 @@ WHERE candidate_bank_details.candidate_id IS NULL;
 SELECT fellowship_candidate.first_name
 FROM fellowship_candidate
 WHERE date_format(joining_date,'%m') = 12;
+
+-- query to find company details assigned to candidate
+
+SELECT fellowship_candidate.first_name,company.name,company.address,company.location
+FROM fellowship_candidate
+JOIN candidate_stack_assignment
+ON fellowship_candidate.id = candidate_stack_assignment.candidate_id
+JOIN company_requirement
+ON company_requirement.id = candidate_stack_assignment.requirement_id
+JOIN company
+ON company.id = company_requirement.company_id;

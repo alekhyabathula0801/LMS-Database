@@ -312,7 +312,7 @@ CREATE TABLE `lms-database`.`lab_threshold` (
 CREATE TABLE `lms-database`.`company_requirement` (
   `id` INT NOT NULL AUTO_INCREMENT,
   `company_id` INT NOT NULL,
-  `requested_month` VARCHAR(15) NOT NULL,
+  `requested_month` DATE NOT NULL,
   `city` VARCHAR(20) NOT NULL,
   `is_document_verified` TINYINT NOT NULL DEFAULT 0,
   `requirement_document_path` VARCHAR(100) NOT NULL,
