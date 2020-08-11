@@ -198,3 +198,11 @@ FROM fellowship_candidate
 LEFT JOIN candidate_documents
 ON fellowship_candidate.id = candidate_documents.candidate_id
 WHERE candidate_documents.candidate_id IS NULL;
+
+-- query to select candidates who didn't submit bank details
+
+SELECT fellowship_candidate.first_name
+FROM fellowship_candidate
+LEFT JOIN candidate_bank_details
+ON fellowship_candidate.id = candidate_bank_details.candidate_id
+WHERE candidate_bank_details.candidate_id IS NULL;
