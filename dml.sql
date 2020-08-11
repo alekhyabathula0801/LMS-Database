@@ -137,3 +137,15 @@ ON candidate_stack_assignment.requirement_id = company_requirement.id
 JOIN tech_stack
 ON company_requirement.tech_stack_id = tech_stack.id
 WHERE tech_stack.tech_name='Java';
+
+
+-- query to find mentors with java technology
+
+SELECT mentor.name
+FROM mentor 
+JOIN mentor_tech_stack
+ON mentor.id = mentor_tech_stack.mentor_id
+JOIN tech_stack
+ON mentor_tech_stack.tech_stack_id = tech_stack.id
+WHERE tech_stack.tech_name = "Java";
+
