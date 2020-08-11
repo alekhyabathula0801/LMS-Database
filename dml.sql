@@ -163,10 +163,10 @@ VALUES ('1', '2020-08-29', 'Bangalore', 'path', '5', '3', '1', '2', '4', '5', '6
 UPDATE `lms-database`.`company_requirement` SET `is_document_verified` = '1' WHERE (`id` = '1');
 UPDATE `lms-database`.`company_requirement` SET `is_document_verified` = '1' WHERE (`id` = '2');
 
-INSERT INTO `lms-database`.`candidate_stack_assignment` (`requirement_id`, `candidate_id`, `assign_date`, `creator_user`) VALUES ('1', '1', '2020:03:05', 'Alekhya');
-INSERT INTO `lms-database`.`candidate_stack_assignment` (`requirement_id`, `candidate_id`, `assign_date`, `creator_user`) VALUES ('1', '2', '2020-03-05', 'Alekhya');
-INSERT INTO `lms-database`.`candidate_stack_assignment` (`requirement_id`, `candidate_id`, `assign_date`, `creator_user`) VALUES ('2', '3', '2020_04-05', 'Alekhya');
-INSERT INTO `lms-database`.`candidate_stack_assignment` (`requirement_id`, `candidate_id`, `assign_date`, `creator_user`) VALUES ('1', '6', '2020-01-01', 'Alekhya');
+INSERT INTO `lms-database`.`candidate_stack_assignment` (`requirement_id`, `candidate_id`, `assign_date`, `creator_user`) VALUES ('1', '1', '2020-08-29', 'Alekhya');
+INSERT INTO `lms-database`.`candidate_stack_assignment` (`requirement_id`, `candidate_id`, `assign_date`, `creator_user`) VALUES ('1', '2', '2020-08-29', 'Alekhya');
+INSERT INTO `lms-database`.`candidate_stack_assignment` (`requirement_id`, `candidate_id`, `assign_date`, `creator_user`) VALUES ('2', '3', '2020-08-29', 'Alekhya');
+INSERT INTO `lms-database`.`candidate_stack_assignment` (`requirement_id`, `candidate_id`, `assign_date`, `creator_user`) VALUES ('1', '6', '2020-08-29', 'Alekhya');
 
 -- query to select candidates assigned java technology
 
@@ -256,3 +256,11 @@ JOIN company_requirement
 ON company_requirement.id = candidate_stack_assignment.requirement_id
 JOIN company
 ON company.id = company_requirement.company_id;
+
+-- query to find candidates whose course end in august
+
+SELECT fellowship_candidate.first_name
+FROM fellowship_candidate
+JOIN candidate_stack_assignment
+ON fellowship_candidate.id = candidate_stack_assignment.candidate_id
+WHERE date_format(candidate_stack_assignment.assign_date,'%m') = 8;
