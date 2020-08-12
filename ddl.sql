@@ -391,3 +391,5 @@ CREATE TABLE `lms-database`.`candidate_stack_assignment` (
     REFERENCES `lms-database`.`fellowship_candidate` (`id`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION);
+ALTER TABLE `lms-database`.`candidate_stack_assignment` 
+ADD COLUMN `completed_date` DATE NOT NULL AFTER `status`;
