@@ -265,6 +265,12 @@ JOIN candidate_stack_assignment
 ON fellowship_candidate.id = candidate_stack_assignment.candidate_id
 WHERE date_format(candidate_stack_assignment.assign_date,'%m') = 8;
 
+-- query to find candidate whose joining date is 2020-03-29
+
+SELECT fellowship_candidate.first_name AS candidate_name
+FROM fellowship_candidate
+WHERE joining_date = "2020-03-29";
+
 -- query to find candidates whose course end in a month  
 
 SELECT fellowship_candidate.first_name 
