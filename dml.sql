@@ -285,6 +285,33 @@ SELECT first_name, datediff(curdate(),joining_date) DIV 7 AS weeks_completed
 FROM fellowship_candidate
 WHERE id = 2;
 
+
+-- query to find candidates and mentors in given lab
+
+DELIMITER //
+CREATE PROCEDURE getCandidatesAndMentorInLab( IN lab_name varchar(15) )
+BEGIN
+	SELECT fellowship_candidate.first_name AS candidate_name,mentor1.name AS lead_name,mentor2.name AS ideation_name,mentor3.name AS buddy_name,lab.location
+	FROM fellowship_candidate
+	JOIN candidate_stack_assignment
+	ON fellowship_candidate.id = candidate_stack_assignment.candidate_id
+	JOIN company_requirement
+	ON company_requirement.id = candidate_stack_assignment.requirement_id
+	JOIN mentor AS mentor1
+	ON company_requirement.lead_id = mentor1.id
+	JOIN mentor AS mentor2
+	ON company_requirement.ideation_engineer_id = mentor2.id
+	JOIN mentor AS mentor3
+	ON company_requirement.buddy_engineer_id = mentor3.id
+	JOIN lab
+	ON mentor1.lab_id = lab.id
+	WHERE lab.location = lab_name;
+END //
+DELIMITER ;
+
+CALL getCandidatesAndMentorInLab("Mumbai");
+CALL getCandidatesAndMentorInLab("Bangalore");
+
 -- query to find buddy engineer, ideation engineer, technology assigned to candidate 6
 
 SELECT fellowship_candidate.first_name AS candidate_name,mentor1.name AS ideation_name,mentor2.name AS buddy_name,tech_stack.tech_name
