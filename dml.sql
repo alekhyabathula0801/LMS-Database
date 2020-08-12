@@ -339,6 +339,14 @@ JOIN candidate_stack_assignment
 ON fellowship_candidate.id = candidate_stack_assignment.candidate_id
 WHERE fellowship_candidate.id = 6;
 
+-- 20. query to find deployed candidates
+
+SELECT fellowship_candidate.first_name AS candidate_name   
+FROM fellowship_candidate
+JOIN candidate_stack_assignment
+ON fellowship_candidate.id = candidate_stack_assignment.candidate_id
+WHERE datediff(candidate_stack_assignment.completed_date, curdate()) < 0;
+
 -- 21. query to find company details assigned to candidate
 
 SELECT fellowship_candidate.first_name,company.name,company.address,company.location
