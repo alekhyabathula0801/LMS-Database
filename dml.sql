@@ -313,6 +313,14 @@ SELECT first_name, datediff(curdate(),joining_date) DIV 7 AS weeks_completed
 FROM fellowship_candidate
 WHERE id = 2;
 
+-- query to find number of weeks remaining by candidate id = 2
+
+SELECT first_name, datediff(candidate_stack_assignment.completed_date,curdate()) DIV 7 AS weeks_remaining
+FROM fellowship_candidate
+JOIN candidate_stack_assignment
+ON fellowship_candidate.id = candidate_stack_assignment.candidate_id
+WHERE fellowship_candidate.id = 2;
+
 -- query to find candidates and mentors in given lab
 
 DELIMITER //
