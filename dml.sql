@@ -1,16 +1,20 @@
 USE `lms-database`;
 
+-- queries to insert and update data in user details table
+
 INSERT INTO `user_details` (`email`, `first_name`, `last_name`, `password`, `contact_number`, `verified`, `creater_stamp`, `creater_user`) 
 	VALUES ('alekhya@gmail.com', 'Alekhya', 'Bathula', 'Alekhya!1', '9999999999', 'OK', '2020-08-08 10:10:10', 'Alekhya');
 INSERT INTO `user_details` (`email`, `first_name`, `last_name`, `password`, `contact_number`, `verified`, `creater_stamp`, `creater_user`) 
 	VALUES ('anu@gmail.com', 'Anu', 'Shetty', 'Anu!1', '8888888888', 'OK', '2020-08-08 10:10:10', 'Anu');
 
+-- queries to insert and update data in hired candidates table
 
 INSERT INTO `hired_candidate` (`first_name`, `last_name`, `email_id`, `degree`, `hired_city`, `hired_date`, `mobile_number`, `permanent_pincode`, `hired_lab`, `attitude`, `communication_remark`, `knowledge_remark`, `aggregate_remark`, `creator_stamp`, `creator_user`) 
 	VALUES ('Alekhya', 'Bathula', 'alekhya@gmail.com', 'BE', 'Hyderabad', '2020-02-27', '9999999999', '123456', 'Lab 2', 'OK', 'Good', 'Ok', '76', '2020-02-27 12:08:10', 'Alekhya');
 INSERT INTO `hired_candidate` (`first_name`, `last_name`, `email_id`, `degree`, `hired_city`, `hired_date`, `mobile_number`, `permanent_pincode`, `hired_lab`, `attitude`, `communication_remark`, `knowledge_remark`, `aggregate_remark`, `creator_stamp`, `creator_user`) 
 	VALUES ('Anu', 'Shetty', 'anu@gmail.com', 'BE', 'Hyderabad', '2020-02-27', '8888888888', '123456', 'Lab 2', 'OK', 'Good', 'Ok', '76', '2020-02-27 12:18:10', 'Alekhya');
 
+-- queries to insert and update data in fellowship candidates table
 
 INSERT INTO `lms-database`.`fellowship_candidate` (`first_name`, `last_name`, `email_id`, `degree`, `hired_city`, `hired_date`, `mobile_number`, `permanent_pincode`, `hired_lab`, `attitude`, `communication_remark`, `knowledge_remark`, `aggregate_remark`, `creator_user`, `birth_date`, `parent_name`, `parent_occupation`, `parents_mobile_number`, `parents_annual_salary`, `local_address`, `permanent_address`, `photo_path`, `joining_date`, `remark`) 
 	VALUES ('Alekhya', 'Bathula', 'alekhya@gmail.com', 'BE', 'Hyderabad', '2020:2:27', '9999999999', '506002', 'Lab1', 'OK', 'OK', 'OK', 'OK', 'Alekhya', '1997:01:08', 'Surender', 'Bussiness', '9999988888', '400000', 'warangal', 'warangal', 'path', '2020:03:29', 'Ok');
@@ -40,6 +44,7 @@ INSERT INTO `lms-database`.`fellowship_candidate` (`first_name`, `last_name`, `e
  VALUES ('Daya', 'hati', 'daya@gmail.com', 'ME', 'Hyderabad', '2019-06-01', '3232454567', '123908', 'Lab2', 'OK', 'OK', 'OK', 'OK', 'Alekhya', '1996-03-01', '1', 
  'danush', 'Engineer', '2134213478', '500000', 'manver', 'manver', 'path', '2019-06-10', 'Verified', 'OK');
 
+-- queries to insert and update data in candidate bank details table
 
 INSERT INTO `lms-database`.`candidate_bank_details` (`candidate_id`, `name`, `account_number`, `ifsc_code`, `pan_number`, `aadhaar_num`, `creator_user`) 
 	VALUES ('1', 'Alekhya', '09090909AN123', 'ANH123D678', 'AH89717BV123', '12309874567', 'Alekhya');
@@ -64,6 +69,7 @@ INSERT INTO `lms-database`.`candidate_bank_details` (`candidate_id`, `name`, `ac
 	`pan_number`, `is_pan_number_verified`, `aadhaar_num`, `is_aadhaar_num_verified`, `creator_user`) 
 	VALUES ('7', 'Daya', 'KJH283HJ82921', '1', 'HHHHHY214698', '1', 'GHJ21873H8721', '1', '21379G281764', '1', 'Alekhya');
 
+-- queries to insert and update data in candidate qualification table
 
 INSERT INTO `lms-database`.`candidate_qualification` (`candidate_id`, `degree_name`, `employee_discipline`, `passing_year`, `final_year_percentage`, `training_institute`, `training_duration_month`, `other_training`, `creator_user`) 
 	VALUES ('1', 'BE', 'MECH', '2019', '77', 'NA', 'NA', 'NA', 'Alekhya');
@@ -86,6 +92,7 @@ INSERT INTO `lms-database`.`candidate_qualification` (`candidate_id`, `degree_na
     `is_training_institute_verified`, `training_duration_month`, `is_training_duration_month_verified`, `other_training`, `is_other_training_verified`, `creator_user`)
     VALUES ('7', 'ME', '1', 'EEE', '1', '2018', '1', '76.6', '1', 'NA', '1', 'NA', '1', 'NA', '1', 'Alekhya');
 
+-- queries to insert and update data in candidate documents table
 
 INSERT INTO `lms-database`.`candidate_documents` (`candidate_id`, `document_type`, `document_path`, `creator_user`) VALUES ('1', 'certificate', 'path', 'Alekhya');
 INSERT INTO `lms-database`.`candidate_documents` (`candidate_id`, `document_type`, `document_path`, `creator_user`) VALUES ('2', 'certificate', 'path', 'Alekhya');
@@ -100,10 +107,12 @@ UPDATE `lms-database`.`candidate_documents` SET `status` = 'Verified' WHERE (`id
 INSERT INTO `lms-database`.`candidate_documents` (`candidate_id`, `document_type`, `document_path`, `status`, `creator_user`) 
 	VALUES ('7', 'certificate', 'path', 'Verified', 'Alekhya');
 
+-- queries to insert data in company table
 
 INSERT INTO `lms-database`.`company` (`name`, `address`, `location`, `creator_user`) VALUES ('Vinuculam', 'Bangalore', 'srinagar', 'Alekhya');
 INSERT INTO `lms-database`.`company` (`name`, `address`, `location`, `creator_user`) VALUES ('Meru', 'Mumbai', 'malhotra', 'Alekhya');
 
+-- queries to insert data in maker program table
 
 INSERT INTO `lms-database`.`maker_program` (`program_name`, `program_type`, `program_link`, `tech_stack_id`, `tech_type_id`, `description`, `creator_user`) 
 	VALUES ('java_database', 'backend', 'link', '1', '2', 'knowledge in java with database', 'Alekhya');
@@ -112,6 +121,7 @@ INSERT INTO `lms-database`.`maker_program` (`program_name`, `program_type`, `pro
 INSERT INTO `lms-database`.`maker_program` (`program_name`, `program_type`, `program_link`, `tech_stack_id`, `tech_type_id`, `is_program_approved`, `description`,
 	`status`, `creator_stamp`, `creator_user`) VALUES ('python', 'backend', 'link', '3', '2', '1', 'knowledge in python', 'Active', '2019-06-01 00:17:13', 'Alekhya');
 
+-- queries to insert data in app parameters table
 
 INSERT INTO `lms-database`.`app_parameters` (`key_type`, `key_value`, `key_text`, `current_status`, `last_updated_user`, `creator_user`, `sequence_number`) 
 	VALUES ('DOCUMENT_STATUS', 'PENDING', 'Pending', 'Active', 'Alekhya', 'Alekhya', '1');
@@ -122,6 +132,7 @@ INSERT INTO `lms-database`.`app_parameters` (`key_type`, `key_value`, `key_text`
 INSERT INTO `lms-database`.`app_parameters` (`key_type`, `key_value`, `key_text`, `current_status`, `last_updated_user`, `creator_user`, `sequence_number`) 
 	VALUES ('CURRENT_STATUS', 'INACTIVE', 'Inactive', 'Inactive', 'Alekhya', 'Alekhya', '1');
 
+-- queries to insert data in mentor table
 
 INSERT INTO `lms-database`.`mentor` (`name`, `mentor_type`, `lab_id`, `creator_user`) VALUES ('Sunil', 'Lead', '1', 'Alekhya');
 INSERT INTO `lms-database`.`mentor` (`name`, `mentor_type`, `lab_id`, `creator_user`) VALUES ('Venkat', 'Ideation', '1', 'Alekhya');
@@ -130,12 +141,14 @@ INSERT INTO `lms-database`.`mentor` (`name`, `mentor_type`, `lab_id`, `creator_u
 INSERT INTO `lms-database`.`mentor` (`name`, `mentor_type`, `lab_id`, `creator_user`) VALUES ('Mohit', 'Ideation', '2', 'Alekhya');
 INSERT INTO `lms-database`.`mentor` (`name`, `mentor_type`, `lab_id`, `creator_user`) VALUES ('Smitha', 'Buddy', '2', 'Alekhya');
 
+-- queries to insert data in mentor ideation map table
 
 INSERT INTO `lms-database`.`mentor_ideation_map` (`parent_id`, `mentor_id`, `creator_user`) VALUES ('1', '2', 'Alekhya');
 INSERT INTO `lms-database`.`mentor_ideation_map` (`parent_id`, `mentor_id`, `creator_user`) VALUES ('1', '3', 'Alekhya');
 INSERT INTO `lms-database`.`mentor_ideation_map` (`parent_id`, `mentor_id`, `creator_user`) VALUES ('4', '5', 'Alekhya');
 INSERT INTO `lms-database`.`mentor_ideation_map` (`parent_id`, `mentor_id`, `creator_user`) VALUES ('4', '6', 'Alekhya');
 
+-- queries to insert data in mentor tech stack table
 
 INSERT INTO `lms-database`.`mentor_tech_stack` (`mentor_id`, `tech_stack_id`, `creator_user`) VALUES ('1', '1', 'Alekhya');
 INSERT INTO `lms-database`.`mentor_tech_stack` (`mentor_id`, `tech_stack_id`, `creator_user`) VALUES ('2', '1', 'Alekhya');
@@ -144,6 +157,7 @@ INSERT INTO `lms-database`.`mentor_tech_stack` (`mentor_id`, `tech_stack_id`, `c
 INSERT INTO `lms-database`.`mentor_tech_stack` (`mentor_id`, `tech_stack_id`, `creator_user`) VALUES ('5', '3', 'Alekhya');
 INSERT INTO `lms-database`.`mentor_tech_stack` (`mentor_id`, `tech_stack_id`, `creator_user`) VALUES ('6', '3', 'Alekhya');
 
+-- queries to insert data in tech stack table
 
 INSERT INTO `lms-database`.`tech_stack` (`id`, `tech_name`, `image_path`, `framework`, `current_status`, `creator_user`) 
 	VALUES ('1', 'Java', 'NA', 'Spring', 'active', 'Alekhya');
@@ -152,16 +166,19 @@ INSERT INTO `lms-database`.`tech_stack` (`id`, `tech_name`, `image_path`, `frame
 INSERT INTO `lms-database`.`tech_stack` (`id`, `tech_name`, `image_path`, `framework`, `current_status`, `creator_user`) 
 	VALUES ('3', 'Python', 'NA', 'Django', 'active', 'Alekhya');
 
+-- queries to insert data in tech type table
 
 INSERT INTO `lms-database`.`tech_type` (`id`, `type_name`, `current_status`, `creator_user`) VALUES ('1', 'Full Stack', 'active', 'Alekhya');
 INSERT INTO `lms-database`.`tech_type` (`id`, `type_name`, `current_status`, `creator_user`) VALUES ('2', 'Backend', 'active', 'Alekhya');
 INSERT INTO `lms-database`.`tech_type` (`id`, `type_name`, `current_status`, `creator_user`) VALUES ('3', 'Frontend', 'active', 'Alekhya');
 
+-- queries to insert data in lab table
 
 INSERT INTO `lms-database`.`lab` (`id`, `name`, `location`, `address`, `status`, `creator_user`) VALUES ('1', 'Lab1', 'Mumbai', 'Malhotra', 'active', 'Alekhya');
 INSERT INTO `lms-database`.`lab` (`id`, `name`, `location`, `address`, `status`, `creator_user`) VALUES ('2', 'Lab2', 'Mumbai', 'Sai Samarth', 'active', 'Alekhya');
 INSERT INTO `lms-database`.`lab` (`id`, `name`, `location`, `address`, `status`, `creator_user`) VALUES ('3', 'Lab3', 'Bangalore', 'HSR Layout sectot 4', 'active', 'Alekhya');
 
+-- queries to insert data in lab threshold table
 
 INSERT INTO `lms-database`.`lab_threshold` (`lab_id`, `lab_capacity`, `lead_threshold`, `ideation_engineer_threshold`, `buddy_engineer_threshold`, `creator_user`) 
 	VALUES ('1', '50', '6', '15', '20', 'Alekhya');
@@ -169,6 +186,8 @@ INSERT INTO `lms-database`.`lab_threshold` (`lab_id`, `lab_capacity`, `lead_thre
 	VALUES ('2', '40', '5', '12', '20', 'Alekhya');
 INSERT INTO `lms-database`.`lab_threshold` (`lab_id`, `lab_capacity`, `lead_threshold`, `ideation_engineer_threshold`, `buddy_engineer_threshold`, `creator_user`) 
 	VALUES ('3', '40', '5', '12', '20', 'Alekhya');
+
+-- queries to insert and update data in company requirement table
 
 INSERT INTO `lms-database`.`company_requirement` (`company_id`, `requested_month`, `city`, `requirement_document_path`, `number_of_engineer`, `tech_stack_id`, 
 	`tech_type_id`, `maker_program_id`, `lead_id`, `ideation_engineer_id`, `buddy_engineer_id`, `special_remark`, `creator_user`) 
@@ -184,6 +203,8 @@ INSERT INTO `lms-database`.`company_requirement` (`company_id`, `requested_month
 UPDATE `lms-database`.`company_requirement` SET `requested_month` = '2020-03-03' WHERE (`id` = '1');
 UPDATE `lms-database`.`company_requirement` SET `requested_month` = '2020-01-01' WHERE (`id` = '2');
 
+-- queries to insert and update data in candidate stack assignment table
+
 INSERT INTO `lms-database`.`candidate_stack_assignment` (`requirement_id`, `candidate_id`, `assign_date`, `creator_user`) VALUES ('1', '1', '2020-08-29', 'Alekhya');
 INSERT INTO `lms-database`.`candidate_stack_assignment` (`requirement_id`, `candidate_id`, `assign_date`, `creator_user`) VALUES ('1', '2', '2020-08-29', 'Alekhya');
 INSERT INTO `lms-database`.`candidate_stack_assignment` (`requirement_id`, `candidate_id`, `assign_date`, `creator_user`) VALUES ('2', '3', '2020-08-29', 'Alekhya');
@@ -196,7 +217,7 @@ UPDATE `lms-database`.`candidate_stack_assignment` SET `assign_date` = '2020-01-
 UPDATE `lms-database`.`candidate_stack_assignment` SET `assign_date` = '2019-12-15', `completed_date` = '2020-09-02' WHERE (`id` = '4');
 UPDATE `lms-database`.`candidate_stack_assignment` SET `completed_date` = '2019-12-15' WHERE (`id` = '6');
 
--- query to select candidates assigned java technology
+-- 1. query to select candidates assigned java technology
 
 SELECT fellowship_candidate.first_name
 FROM fellowship_candidate
@@ -208,7 +229,7 @@ JOIN tech_stack
 ON company_requirement.tech_stack_id = tech_stack.id
 WHERE tech_stack.tech_name='Java';
 
--- query to find mentors with java technology
+-- 2. query to find mentors with java technology
 
 SELECT mentor.name,mentor.mentor_type,tech_stack.tech_name
 FROM mentor 
@@ -218,7 +239,51 @@ JOIN tech_stack
 ON mentor_tech_stack.tech_stack_id = tech_stack.id
 WHERE tech_stack.tech_name = "Java";
 
--- query to find candidates who are 2019 passed out
+-- 7. query to find candidates whose technology is not assigned
+
+SELECT fellowship_candidate.first_name
+FROM fellowship_candidate
+LEFT JOIN candidate_stack_assignment
+ON fellowship_candidate.id = candidate_stack_assignment.candidate_id
+WHERE candidate_stack_assignment.candidate_id IS NULL;
+
+-- 8. query to select candidates who didn't submit documents
+
+SELECT fellowship_candidate.first_name
+FROM fellowship_candidate
+LEFT JOIN candidate_documents
+ON fellowship_candidate.id = candidate_documents.candidate_id
+WHERE candidate_documents.candidate_id IS NULL;
+
+-- 9. query to select candidates who didn't submit bank details
+
+SELECT fellowship_candidate.first_name
+FROM fellowship_candidate
+LEFT JOIN candidate_bank_details
+ON fellowship_candidate.id = candidate_bank_details.candidate_id
+WHERE candidate_bank_details.candidate_id IS NULL;
+
+-- 10. query to find candidates joined in december
+
+SELECT fellowship_candidate.first_name
+FROM fellowship_candidate
+WHERE date_format(joining_date,'%m') = 12;
+
+-- 11. query to find candidates whose course end in august
+
+SELECT fellowship_candidate.first_name
+FROM fellowship_candidate
+JOIN candidate_stack_assignment
+ON fellowship_candidate.id = candidate_stack_assignment.candidate_id
+WHERE date_format(candidate_stack_assignment.completed_date,'%m') = 8;
+
+-- 12. query to find candidate whose joining date is 2020-03-29
+
+SELECT fellowship_candidate.first_name AS candidate_name
+FROM fellowship_candidate
+WHERE joining_date = "2020-03-29";
+
+-- 13. query to find candidates who are 2019 passed out
 
 SELECT fellowship_candidate.first_name
 FROM fellowship_candidate 
@@ -226,7 +291,7 @@ JOIN candidate_qualification
 ON fellowship_candidate.id = candidate_qualification.candidate_id
 WHERE candidate_qualification.passing_year = 2019;
 
--- query to find technology assigned for candidates with MCA degree  
+-- 14. query to find technology assigned for candidates with MCA degree  
 
 SELECT fellowship_candidate.first_name, tech_stack.tech_name
 FROM fellowship_candidate
@@ -238,43 +303,43 @@ JOIN tech_stack
 ON company_requirement.tech_stack_id = tech_stack.id
 WHERE fellowship_candidate.degree = 'MCA';
 
--- query to find candidates whose technology is not assigned
+-- 15. query to find candidates whose course end in a month  
 
-SELECT fellowship_candidate.first_name
+SELECT fellowship_candidate.first_name 
 FROM fellowship_candidate
-LEFT JOIN candidate_stack_assignment
+JOIN candidate_stack_assignment
 ON fellowship_candidate.id = candidate_stack_assignment.candidate_id
-WHERE candidate_stack_assignment.candidate_id IS NULL;
+WHERE datediff(candidate_stack_assignment.completed_date,curdate()) BETWEEN 0 AND 30;
 
--- query to find joining date of candidate id = 4
+-- 16. query to find number of weeks completed by candidate id = 2
+
+SELECT first_name, datediff(curdate(),joining_date) DIV 7 AS weeks_completed 
+FROM fellowship_candidate
+WHERE id = 2;
+
+-- 17. query to find joining date of candidate id = 4
 
 SELECT fellowship_candidate.joining_date
 FROM fellowship_candidate
 WHERE fellowship_candidate.id = 4;
 
--- query to select candidates who didn't submit documents
+-- 18. query to find number of weeks remaining by candidate id = 2
 
-SELECT fellowship_candidate.first_name
+SELECT first_name, datediff(candidate_stack_assignment.completed_date,curdate()) DIV 7 AS weeks_remaining
 FROM fellowship_candidate
-LEFT JOIN candidate_documents
-ON fellowship_candidate.id = candidate_documents.candidate_id
-WHERE candidate_documents.candidate_id IS NULL;
+JOIN candidate_stack_assignment
+ON fellowship_candidate.id = candidate_stack_assignment.candidate_id
+WHERE fellowship_candidate.id = 2;
 
--- query to select candidates who didn't submit bank details
+-- 19. query to find number of days remaining by candidate id = 6
 
-SELECT fellowship_candidate.first_name
+SELECT first_name, datediff(candidate_stack_assignment.completed_date,curdate()) AS days_remaining 
 FROM fellowship_candidate
-LEFT JOIN candidate_bank_details
-ON fellowship_candidate.id = candidate_bank_details.candidate_id
-WHERE candidate_bank_details.candidate_id IS NULL;
+JOIN candidate_stack_assignment
+ON fellowship_candidate.id = candidate_stack_assignment.candidate_id
+WHERE fellowship_candidate.id = 6;
 
--- query to find candidates joined in december
-
-SELECT fellowship_candidate.first_name
-FROM fellowship_candidate
-WHERE date_format(joining_date,'%m') = 12;
-
--- query to find company details assigned to candidate
+-- 21. query to find company details assigned to candidate
 
 SELECT fellowship_candidate.first_name,company.name,company.address,company.location
 FROM fellowship_candidate
@@ -285,51 +350,7 @@ ON company_requirement.id = candidate_stack_assignment.requirement_id
 JOIN company
 ON company.id = company_requirement.company_id;
 
--- query to find candidates whose course end in august
-
-SELECT fellowship_candidate.first_name
-FROM fellowship_candidate
-JOIN candidate_stack_assignment
-ON fellowship_candidate.id = candidate_stack_assignment.candidate_id
-WHERE date_format(candidate_stack_assignment.completed_date,'%m') = 8;
-
--- query to find candidate whose joining date is 2020-03-29
-
-SELECT fellowship_candidate.first_name AS candidate_name
-FROM fellowship_candidate
-WHERE joining_date = "2020-03-29";
-
--- query to find candidates whose course end in a month  
-
-SELECT fellowship_candidate.first_name 
-FROM fellowship_candidate
-JOIN candidate_stack_assignment
-ON fellowship_candidate.id = candidate_stack_assignment.candidate_id
-WHERE datediff(candidate_stack_assignment.completed_date,curdate()) BETWEEN 0 AND 30;
-
--- query to find number of weeks completed by candidate id = 2
-
-SELECT first_name, datediff(curdate(),joining_date) DIV 7 AS weeks_completed 
-FROM fellowship_candidate
-WHERE id = 2;
-
--- query to find number of days remaining by candidate id = 6
-
-SELECT first_name, datediff(candidate_stack_assignment.completed_date,curdate()) AS days_remaining 
-FROM fellowship_candidate
-JOIN candidate_stack_assignment
-ON fellowship_candidate.id = candidate_stack_assignment.candidate_id
-WHERE fellowship_candidate.id = 6;
-
--- query to find number of weeks remaining by candidate id = 2
-
-SELECT first_name, datediff(candidate_stack_assignment.completed_date,curdate()) DIV 7 AS weeks_remaining
-FROM fellowship_candidate
-JOIN candidate_stack_assignment
-ON fellowship_candidate.id = candidate_stack_assignment.candidate_id
-WHERE fellowship_candidate.id = 2;
-
--- query to find candidates and mentors in given lab
+-- 22. query to find candidates and mentors in given lab
 
 DELIMITER //
 CREATE PROCEDURE getCandidatesAndMentorInLab( IN lab_name varchar(15) )
@@ -355,7 +376,7 @@ DELIMITER ;
 CALL getCandidatesAndMentorInLab("Mumbai");
 CALL getCandidatesAndMentorInLab("Bangalore");
 
--- query to find buddy engineer, ideation engineer, technology assigned to candidate 6
+-- 23. query to find buddy engineer, ideation engineer, technology assigned to candidate 6
 
 SELECT fellowship_candidate.first_name AS candidate_name,mentor1.name AS ideation_name,mentor2.name AS buddy_name,tech_stack.tech_name
 FROM fellowship_candidate
