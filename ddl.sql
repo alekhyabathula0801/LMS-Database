@@ -14,7 +14,6 @@ CREATE TABLE `lms-database`.`user_details` (
   PRIMARY KEY (`id`),
   UNIQUE INDEX `email_UNIQUE` (`email` ASC) VISIBLE);
 
-
 CREATE TABLE `hired_candidate` (
   `id` INT NOT NULL AUTO_INCREMENT,
   `first_name` VARCHAR(15) NOT NULL,
@@ -36,7 +35,6 @@ CREATE TABLE `hired_candidate` (
   `creator_user` VARCHAR(25) NOT NULL,
   PRIMARY KEY (`id`),
   UNIQUE INDEX `email_id_UNIQUE` (`email_id` ASC) VISIBLE);
-
 
 CREATE TABLE `fellowship_candidate` (
   `id` INT NOT NULL AUTO_INCREMENT,
@@ -98,7 +96,6 @@ CREATE TABLE `candidate_bank_details` (
     ON DELETE NO ACTION
     ON UPDATE NO ACTION);
 
-
 CREATE TABLE `lms-database`.`candidate_qualification` (
   `id` INT NOT NULL AUTO_INCREMENT,
   `candidate_id` INT NOT NULL,
@@ -128,7 +125,6 @@ CREATE TABLE `lms-database`.`candidate_qualification` (
     ON DELETE NO ACTION
     ON UPDATE NO ACTION);
 
-
 CREATE TABLE `lms-database`.`candidate_documents` (
   `id` INT NOT NULL AUTO_INCREMENT,
   `candidate_id` INT NOT NULL,
@@ -146,7 +142,6 @@ CREATE TABLE `lms-database`.`candidate_documents` (
     ON DELETE NO ACTION
     ON UPDATE NO ACTION);
 
-
 CREATE TABLE `company` (
   `id` INT NOT NULL AUTO_INCREMENT,
   `name` VARCHAR(45) NOT NULL,
@@ -156,7 +151,6 @@ CREATE TABLE `company` (
   `creator_stamp` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `creator_user` VARCHAR(25) NOT NULL,
   PRIMARY KEY (`id`));
-
 
 CREATE TABLE `lms-database`.`maker_program` (
   `id` INT NOT NULL AUTO_INCREMENT,
@@ -184,7 +178,6 @@ CREATE TABLE `lms-database`.`maker_program` (
     ON DELETE NO ACTION
     ON UPDATE NO ACTION);
 
-
 CREATE TABLE `lms-database`.`app_parameters` (
   `id` INT NOT NULL AUTO_INCREMENT,
   `key_type` VARCHAR(25) NOT NULL,
@@ -197,7 +190,6 @@ CREATE TABLE `lms-database`.`app_parameters` (
   `creator_user` VARCHAR(20) NOT NULL,
   `sequence_number` INT NOT NULL,
   PRIMARY KEY (`id`));
-
 
 CREATE TABLE `lms-database`.`mentor` (
   `id` INT NOT NULL AUTO_INCREMENT,
@@ -236,7 +228,6 @@ CREATE TABLE `lms-database`.`mentor_ideation_map` (
     ON DELETE NO ACTION
     ON UPDATE NO ACTION);
 
-
 CREATE TABLE `lms-database`.`mentor_tech_stack` (
   `id` INT NOT NULL AUTO_INCREMENT,
   `mentor_id` INT NOT NULL,
@@ -258,8 +249,6 @@ CREATE TABLE `lms-database`.`mentor_tech_stack` (
     ON DELETE NO ACTION
     ON UPDATE NO ACTION);
 
-
-
 CREATE TABLE `lms-database`.`tech_stack` (
   `id` INT NOT NULL,
   `tech_name` VARCHAR(25) NOT NULL,
@@ -270,7 +259,6 @@ CREATE TABLE `lms-database`.`tech_stack` (
   `creator_user` VARCHAR(25) NOT NULL,
   PRIMARY KEY (`id`));
 
-
 CREATE TABLE `lms-database`.`tech_type` (
   `id` INT NOT NULL AUTO_INCREMENT,
   `type_name` VARCHAR(25) NOT NULL,
@@ -278,7 +266,6 @@ CREATE TABLE `lms-database`.`tech_type` (
   `creator_stamp` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `creator_user` VARCHAR(25) NOT NULL,
   PRIMARY KEY (`id`));
-
 
  CREATE TABLE `lms-database`.`lab` (
   `id` INT NOT NULL AUTO_INCREMENT,
@@ -289,7 +276,6 @@ CREATE TABLE `lms-database`.`tech_type` (
   `creator_stamp` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `creator_user` VARCHAR(25) NOT NULL,
   PRIMARY KEY (`id`));
-
 
 CREATE TABLE `lms-database`.`lab_threshold` (
   `id` INT NOT NULL AUTO_INCREMENT,
@@ -391,5 +377,6 @@ CREATE TABLE `lms-database`.`candidate_stack_assignment` (
     REFERENCES `lms-database`.`fellowship_candidate` (`id`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION);
+
 ALTER TABLE `lms-database`.`candidate_stack_assignment` 
 ADD COLUMN `completed_date` DATE NOT NULL AFTER `status`;
