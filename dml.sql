@@ -278,3 +278,19 @@ WHERE datediff(candidate_stack_assignment.assign_date,curdate()) BETWEEN 0 AND 3
 SELECT first_name, datediff(curdate(),joining_date) DIV 7 AS weeks_completed 
 FROM fellowship_candidate
 WHERE id = 2;
+
+-- query to find buddy engineer, ideation engineer, technology assigned to candidate 6
+
+SELECT fellowship_candidate.first_name AS candidate_name,mentor1.name AS ideation_name,mentor2.name AS buddy_name,tech_stack.tech_name
+FROM fellowship_candidate
+JOIN candidate_stack_assignment
+ON fellowship_candidate.id = candidate_stack_assignment.candidate_id
+JOIN company_requirement
+ON company_requirement.id = candidate_stack_assignment.requirement_id
+JOIN mentor AS mentor1
+ON company_requirement.ideation_engineer_id = mentor1.id
+JOIN mentor AS mentor2
+ON company_requirement.buddy_engineer_id = mentor2.id
+JOIN tech_stack
+ON tech_stack.id = company_requirement.tech_stack_id
+WHERE fellowship_candidate.id = 6;
