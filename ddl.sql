@@ -250,7 +250,7 @@ CREATE TABLE `lms-database`.`mentor_tech_stack` (
     ON UPDATE NO ACTION);
 
 CREATE TABLE `lms-database`.`tech_stack` (
-  `id` INT NOT NULL,
+  `id` INT NOT NULL AUTO_INCREMENT,
   `tech_name` VARCHAR(25) NOT NULL,
   `image_path` VARCHAR(45) NOT NULL,
   `framework` VARCHAR(25) NOT NULL,
