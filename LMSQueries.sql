@@ -166,6 +166,7 @@ DELIMITER ;
 
 CALL getCandidatesAndMentorInLab("Mumbai");
 CALL getCandidatesAndMentorInLab("Bangalore");
+CALL getCandidatesAndMentorInLab("Pune");
 
 -- 23. query to find buddy engineer, ideation engineer, technology assigned to candidate 6
 
