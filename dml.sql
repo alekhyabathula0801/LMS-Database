@@ -498,6 +498,134 @@ UPDATE `lms-database`.`candidate_documents` SET `status` = 'Verified' WHERE (`id
 UPDATE `lms-database`.`candidate_documents` SET `status` = 'Verified' WHERE (`id` = '4');
 INSERT INTO `lms-database`.`candidate_documents` (`candidate_id`, `document_type`, `document_path`, `status`, `creator_user`) 
 	VALUES ('7', 'certificate', 'path', 'Verified', 'Alekhya');
+INSERT INTO `lms-database`.`candidate_documents` (`candidate_id`, `document_type`, `document_path`, `status`, `creator_user`)
+ VALUES ('8', 'certificate', 'path', 'Verified', 'Alekhya');
+INSERT INTO `lms-database`.`candidate_documents` (`candidate_id`, `document_type`, `document_path`, `status`, `creator_user`)
+ VALUES ('9', 'certificate', 'path', 'Verified', 'Alekhya');
+INSERT INTO `lms-database`.`candidate_documents` (`candidate_id`, `document_type`, `document_path`, `status`, `creator_user`)
+ VALUES ('10', 'certificate', 'path', 'Verified', 'Alekhya');
+INSERT INTO `lms-database`.`candidate_documents` (`candidate_id`, `document_type`, `document_path`, `status`, `creator_user`)
+ VALUES ('11', 'certificate', 'path', 'Verified', 'Alekhya');
+INSERT INTO `lms-database`.`candidate_documents` (`candidate_id`, `document_type`, `document_path`, `status`, `creator_user`)
+ VALUES ('12', 'certificate', 'path', 'Verified', 'Alekhya');
+INSERT INTO `lms-database`.`candidate_documents` (`candidate_id`, `document_type`, `document_path`, `status`, `creator_user`)
+ VALUES ('13', 'certificate', 'path', 'Verified', 'Alekhya');
+INSERT INTO `lms-database`.`candidate_documents` (`candidate_id`, `document_type`, `document_path`, `status`, `creator_user`)
+ VALUES ('14', 'certificate', 'path', 'Verified', 'Alekhya');
+INSERT INTO `lms-database`.`candidate_documents` (`candidate_id`, `document_type`, `document_path`, `status`, `creator_user`)
+ VALUES ('15', 'certificate', 'path', 'Verified', 'Alekhya');
+INSERT INTO `lms-database`.`candidate_documents` (`candidate_id`, `document_type`, `document_path`, `status`, `creator_user`)
+ VALUES ('16', 'certificate', 'path', 'Verified', 'Alekhya');
+INSERT INTO `lms-database`.`candidate_documents` (`candidate_id`, `document_type`, `document_path`, `status`, `creator_user`)
+ VALUES ('17', 'certificate', 'path', 'Verified', 'Alekhya');
+INSERT INTO `lms-database`.`candidate_documents` (`candidate_id`, `document_type`, `document_path`, `status`, `creator_user`)
+ VALUES ('18', 'certificate', 'path', 'Verified', 'Alekhya');
+INSERT INTO `lms-database`.`candidate_documents` (`candidate_id`, `document_type`, `document_path`, `status`, `creator_user`)
+ VALUES ('19', 'certificate', 'path', 'Verified', 'Alekhya');
+INSERT INTO `lms-database`.`candidate_documents` (`candidate_id`, `document_type`, `document_path`, `status`, `creator_user`)
+ VALUES ('20', 'certificate', 'path', 'Verified', 'Alekhya');
+INSERT INTO `lms-database`.`candidate_documents` (`candidate_id`, `document_type`, `document_path`, `status`, `creator_user`)
+ VALUES ('21', 'certificate', 'path', 'Verified', 'Alekhya');
+INSERT INTO `lms-database`.`candidate_documents` (`candidate_id`, `document_type`, `document_path`, `status`, `creator_user`)
+ VALUES ('22', 'certificate', 'path', 'Verified', 'Alekhya');
+INSERT INTO `lms-database`.`candidate_documents` (`candidate_id`, `document_type`, `document_path`, `status`, `creator_user`)
+ VALUES ('23', 'certificate', 'path', 'Verified', 'Alekhya');
+INSERT INTO `lms-database`.`candidate_documents` (`candidate_id`, `document_type`, `document_path`, `status`, `creator_user`)
+ VALUES ('24', 'certificate', 'path', 'Verified', 'Alekhya');
+INSERT INTO `lms-database`.`candidate_documents` (`candidate_id`, `document_type`, `document_path`, `status`, `creator_user`)
+ VALUES ('25', 'certificate', 'path', 'Verified', 'Alekhya');
+INSERT INTO `lms-database`.`candidate_documents` (`candidate_id`, `document_type`, `document_path`, `status`, `creator_user`)
+ VALUES ('26', 'certificate', 'path', 'Verified', 'Alekhya');
+INSERT INTO `lms-database`.`candidate_documents` (`candidate_id`, `document_type`, `document_path`, `status`, `creator_user`)
+ VALUES ('27', 'certificate', 'path', 'Verified', 'Alekhya');
+INSERT INTO `lms-database`.`candidate_documents` (`candidate_id`, `document_type`, `document_path`, `status`, `creator_user`)
+ VALUES ('30', 'certificate', 'path', 'Verified', 'Alekhya');
+INSERT INTO `lms-database`.`candidate_documents` (`candidate_id`, `document_type`, `document_path`, `status`, `creator_user`)
+ VALUES ('31', 'certificate', 'path', 'Verified', 'Alekhya');
+INSERT INTO `lms-database`.`candidate_documents` (`candidate_id`, `document_type`, `document_path`, `status`, `creator_user`)
+ VALUES ('32', 'certificate', 'path', 'Verified', 'Alekhya');
+INSERT INTO `lms-database`.`candidate_documents` (`candidate_id`, `document_type`, `document_path`, `status`, `creator_user`)
+ VALUES ('33', 'certificate', 'path', 'Verified', 'Alekhya');
+INSERT INTO `lms-database`.`candidate_documents` (`candidate_id`, `document_type`, `document_path`, `status`, `creator_user`)
+ VALUES ('34', 'certificate', 'path', 'Verified', 'Alekhya');
+INSERT INTO `lms-database`.`candidate_documents` (`candidate_id`, `document_type`, `document_path`, `status`, `creator_user`)
+ VALUES ('35', 'certificate', 'path', 'Verified', 'Alekhya');
+INSERT INTO `lms-database`.`candidate_documents` (`candidate_id`, `document_type`, `document_path`, `status`, `creator_user`)
+ VALUES ('36', 'certificate', 'path', 'Verified', 'Alekhya');
+INSERT INTO `lms-database`.`candidate_documents` (`candidate_id`, `document_type`, `document_path`, `status`, `creator_user`)
+ VALUES ('37', 'certificate', 'path', 'Verified', 'Alekhya');
+INSERT INTO `lms-database`.`candidate_documents` (`candidate_id`, `document_type`, `document_path`, `status`, `creator_user`)
+ VALUES ('38', 'certificate', 'path', 'Verified', 'Alekhya');
+INSERT INTO `lms-database`.`candidate_documents` (`candidate_id`, `document_type`, `document_path`, `status`, `creator_user`)
+ VALUES ('39', 'certificate', 'path', 'Verified', 'Alekhya');
+INSERT INTO `lms-database`.`candidate_documents` (`candidate_id`, `document_type`, `document_path`, `status`, `creator_user`)
+ VALUES ('40', 'certificate', 'path', 'Verified', 'Alekhya');
+INSERT INTO `lms-database`.`candidate_documents` (`candidate_id`, `document_type`, `document_path`, `status`, `creator_user`)
+ VALUES ('41', 'certificate', 'path', 'Verified', 'Alekhya');
+INSERT INTO `lms-database`.`candidate_documents` (`candidate_id`, `document_type`, `document_path`, `status`, `creator_user`)
+ VALUES ('42', 'certificate', 'path', 'Verified', 'Alekhya');
+INSERT INTO `lms-database`.`candidate_documents` (`candidate_id`, `document_type`, `document_path`, `status`, `creator_user`)
+ VALUES ('43', 'certificate', 'path', 'Verified', 'Alekhya');
+INSERT INTO `lms-database`.`candidate_documents` (`candidate_id`, `document_type`, `document_path`, `status`, `creator_user`)
+ VALUES ('44', 'certificate', 'path', 'Verified', 'Alekhya');
+INSERT INTO `lms-database`.`candidate_documents` (`candidate_id`, `document_type`, `document_path`, `status`, `creator_user`)
+ VALUES ('45', 'certificate', 'path', 'Verified', 'Alekhya');
+INSERT INTO `lms-database`.`candidate_documents` (`candidate_id`, `document_type`, `document_path`, `status`, `creator_user`)
+ VALUES ('46', 'certificate', 'path', 'Verified', 'Alekhya');
+INSERT INTO `lms-database`.`candidate_documents` (`candidate_id`, `document_type`, `document_path`, `status`, `creator_user`)
+ VALUES ('47', 'certificate', 'path', 'Verified', 'Alekhya');
+INSERT INTO `lms-database`.`candidate_documents` (`candidate_id`, `document_type`, `document_path`, `status`, `creator_user`)
+ VALUES ('48', 'certificate', 'path', 'Verified', 'Alekhya');
+INSERT INTO `lms-database`.`candidate_documents` (`candidate_id`, `document_type`, `document_path`, `status`, `creator_user`)
+ VALUES ('49', 'certificate', 'path', 'Verified', 'Alekhya');
+INSERT INTO `lms-database`.`candidate_documents` (`candidate_id`, `document_type`, `document_path`, `status`, `creator_user`)
+ VALUES ('50', 'certificate', 'path', 'Verified', 'Alekhya');
+INSERT INTO `lms-database`.`candidate_documents` (`candidate_id`, `document_type`, `document_path`, `status`, `creator_user`)
+ VALUES ('51', 'certificate', 'path', 'Verified', 'Alekhya');
+INSERT INTO `lms-database`.`candidate_documents` (`candidate_id`, `document_type`, `document_path`, `status`, `creator_user`)
+ VALUES ('53', 'certificate', 'path', 'Verified', 'Alekhya');
+INSERT INTO `lms-database`.`candidate_documents` (`candidate_id`, `document_type`, `document_path`, `status`, `creator_user`)
+ VALUES ('54', 'certificate', 'path', 'Verified', 'Alekhya');
+INSERT INTO `lms-database`.`candidate_documents` (`candidate_id`, `document_type`, `document_path`, `status`, `creator_user`)
+ VALUES ('55', 'certificate', 'path', 'Verified', 'Alekhya');
+INSERT INTO `lms-database`.`candidate_documents` (`candidate_id`, `document_type`, `document_path`, `status`, `creator_user`)
+ VALUES ('56', 'certificate', 'path', 'Verified', 'Alekhya');
+INSERT INTO `lms-database`.`candidate_documents` (`candidate_id`, `document_type`, `document_path`, `status`, `creator_user`)
+ VALUES ('57', 'certificate', 'path', 'Verified', 'Alekhya');
+INSERT INTO `lms-database`.`candidate_documents` (`candidate_id`, `document_type`, `document_path`, `status`, `creator_user`)
+ VALUES ('58', 'certificate', 'path', 'Verified', 'Alekhya');
+INSERT INTO `lms-database`.`candidate_documents` (`candidate_id`, `document_type`, `document_path`, `status`, `creator_user`)
+ VALUES ('59', 'certificate', 'path', 'Verified', 'Alekhya');
+INSERT INTO `lms-database`.`candidate_documents` (`candidate_id`, `document_type`, `document_path`, `status`, `creator_user`)
+ VALUES ('60', 'certificate', 'path', 'Verified', 'Alekhya');
+INSERT INTO `lms-database`.`candidate_documents` (`candidate_id`, `document_type`, `document_path`, `status`, `creator_user`)
+ VALUES ('61', 'certificate', 'path', 'Verified', 'Alekhya');
+INSERT INTO `lms-database`.`candidate_documents` (`candidate_id`, `document_type`, `document_path`, `status`, `creator_user`)
+ VALUES ('62', 'certificate', 'path', 'Verified', 'Alekhya');
+INSERT INTO `lms-database`.`candidate_documents` (`candidate_id`, `document_type`, `document_path`, `status`, `creator_user`)
+ VALUES ('63', 'certificate', 'path', 'Verified', 'Alekhya');
+INSERT INTO `lms-database`.`candidate_documents` (`candidate_id`, `document_type`, `document_path`, `status`, `creator_user`)
+ VALUES ('64', 'certificate', 'path', 'Verified', 'Alekhya');
+INSERT INTO `lms-database`.`candidate_documents` (`candidate_id`, `document_type`, `document_path`, `status`, `creator_user`)
+ VALUES ('65', 'certificate', 'path', 'Verified', 'Alekhya');
+INSERT INTO `lms-database`.`candidate_documents` (`candidate_id`, `document_type`, `document_path`, `status`, `creator_user`)
+ VALUES ('66', 'certificate', 'path', 'Verified', 'Alekhya');
+INSERT INTO `lms-database`.`candidate_documents` (`candidate_id`, `document_type`, `document_path`, `status`, `creator_user`)
+ VALUES ('67', 'certificate', 'path', 'Verified', 'Alekhya');
+INSERT INTO `lms-database`.`candidate_documents` (`candidate_id`, `document_type`, `document_path`, `status`, `creator_user`)
+ VALUES ('68', 'certificate', 'path', 'Verified', 'Alekhya');
+INSERT INTO `lms-database`.`candidate_documents` (`candidate_id`, `document_type`, `document_path`, `status`, `creator_user`)
+ VALUES ('69', 'certificate', 'path', 'Verified', 'Alekhya');
+INSERT INTO `lms-database`.`candidate_documents` (`candidate_id`, `document_type`, `document_path`, `status`, `creator_user`)
+ VALUES ('70', 'certificate', 'path', 'Verified', 'Alekhya');
+INSERT INTO `lms-database`.`candidate_documents` (`candidate_id`, `document_type`, `document_path`, `status`, `creator_user`)
+ VALUES ('71', 'certificate', 'path', 'Verified', 'Alekhya');
+INSERT INTO `lms-database`.`candidate_documents` (`candidate_id`, `document_type`, `document_path`, `status`, `creator_user`)
+ VALUES ('72', 'certificate', 'path', 'Verified', 'Alekhya');
+INSERT INTO `lms-database`.`candidate_documents` (`candidate_id`, `document_type`, `document_path`, `status`, `creator_user`)
+ VALUES ('73', 'certificate', 'path', 'Verified', 'Alekhya');
+INSERT INTO `lms-database`.`candidate_documents` (`candidate_id`, `document_type`, `document_path`, `status`, `creator_user`)
+ VALUES ('74', 'certificate', 'path', 'Verified', 'Alekhya');
 
 -- queries to insert data in company table
 
