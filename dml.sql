@@ -2,10 +2,26 @@ USE `lms-database`;
 
 -- queries to insert and update data in user details table
 
-INSERT INTO `user_details` (`email`, `first_name`, `last_name`, `password`, `contact_number`, `verified`, `creater_stamp`, `creater_user`) 
-	VALUES ('alekhya@gmail.com', 'Alekhya', 'Bathula', 'Alekhya!1', '9999999999', 'OK', '2020-08-08 10:10:10', 'Alekhya');
-INSERT INTO `user_details` (`email`, `first_name`, `last_name`, `password`, `contact_number`, `verified`, `creater_stamp`, `creater_user`) 
-	VALUES ('anu@gmail.com', 'Anu', 'Shetty', 'Anu!1', '8888888888', 'OK', '2020-08-08 10:10:10', 'Anu');
+INSERT INTO `user_details` (`email`, `first_name`, `last_name`, `password`, `contact_number`, `verified`, `creater_user`) 
+	VALUES ('alekhya@gmail.com', 'Alekhya', 'Bathula', 'Alekhya!1', '9999999999','1', 'Alekhya');
+INSERT INTO `user_details` (`email`, `first_name`, `last_name`, `password`, `contact_number`, `verified`, `creater_user`) 
+	VALUES ('anu@gmail.com', 'Anu', 'Shetty', 'Anu!1', '8888888888', '1', 'Anu');
+INSERT INTO `user_details` (`email`, `first_name`, `last_name`, `password`, `contact_number`, `verified`, `creater_user`)
+ VALUES ('sana@gmail.com', 'Sana', 'Shaik', 'Sana!1', '1298379000', '1', 'Alekhya');
+INSERT INTO `user_details` (`email`, `first_name`, `last_name`, `password`, `contact_number`, `verified`, `creater_user`)
+ VALUES ('danush@gmail.com', 'Dhanush', 'Naidu', 'Dhanush!1', '1298378172', '1', 'Alekhya');
+INSERT INTO `user_details` (`email`, `first_name`, `last_name`, `password`, `contact_number`, `verified`, `creater_user`)
+ VALUES ('farah@gmail.com', 'Farah', 'Shaik', 'Farah!1', '1239836270', '1', 'Alekhya');
+INSERT INTO `user_details` (`email`, `first_name`, `last_name`, `password`, `contact_number`, `verified`, `creater_user`)
+ VALUES ('banu@gmail.com', 'Bhanu', 'Gone', 'Bhanu', '1208903891', '1', 'Alekhya');
+INSERT INTO `user_details` (`email`, `first_name`, `last_name`, `password`, `contact_number`, `verified`, `creater_user`)
+ VALUES ('soumya@gmail.com', 'Soumya', 'Hane', 'Soumya!1', '8890123233', '1', 'Alekhya');
+INSERT INTO `user_details` (`email`, `first_name`, `last_name`, `password`, `contact_number`, `verified`, `creater_user`)
+ VALUES ('janu@gmail.com', 'Janu', 'Dane', 'Janu!1', '2378451327', '1', 'Alekhya');
+INSERT INTO `user_details` (`email`, `first_name`, `last_name`, `password`, `contact_number`, `verified`, `creater_user`)
+ VALUES ('janusri@gmail.com', 'Janusri', 'Dane', 'Janusri!1', '2378451027', '1', 'Alekhya');
+ INSERT INTO `user_details` (`email`, `first_name`, `last_name`, `password`, `contact_number`, `verified`, `creater_user`)
+ VALUES ('kavya@gmail.com', 'Kavya', 'Jani', 'Kavya!1', '2078451327', '1', 'Alekhya');
 
 -- queries to insert and update data in hired candidates table
 

@@ -13,6 +13,9 @@ CREATE TABLE `lms-database`.`user_details` (
   `creater_user` VARCHAR(25) NOT NULL,
   PRIMARY KEY (`id`),
   UNIQUE INDEX `email_UNIQUE` (`email` ASC) VISIBLE);
+ALTER TABLE `lms-database`.`user_details` 
+CHANGE COLUMN `verified` `verified` TINYINT NOT NULL DEFAULT 0  ,
+CHANGE COLUMN `creater_stamp` `creater_stamp` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ;
 
 CREATE TABLE `hired_candidate` (
   `id` INT NOT NULL AUTO_INCREMENT,
