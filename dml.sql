@@ -612,6 +612,266 @@ INSERT INTO `lms-database`.`candidate_qualification` (`candidate_id`, `degree_na
 	`is_employee_discipline_verified`, `passing_year`, `is_passing_year_verified`, `final_year_percentage`, `is_final_year_percentage_verified`, `training_institute`,
     `is_training_institute_verified`, `training_duration_month`, `is_training_duration_month_verified`, `other_training`, `is_other_training_verified`, `creator_user`)
     VALUES ('7', 'ME', '1', 'EEE', '1', '2018', '1', '76.6', '1', 'NA', '1', 'NA', '1', 'NA', '1', 'Alekhya');
+INSERT INTO `lms-database`.`candidate_qualification` (`candidate_id`, `degree_name`, `is_degree_name_verified`, `employee_discipline`, `is_employee_discipline_verified`,
+ `passing_year`, `is_passing_year_verified`, `final_year_percentage`, `is_final_year_percentage_verified`, `training_institute`, `is_training_institute_verified`,
+ `training_duration_month`, `is_training_duration_month_verified`, `other_training`, `is_other_training_verified`, `creator_user`)
+ VALUES ('8', 'ME', '1', 'COMPUTERS','1', '2019', '1', '78', '1', 'NA', '1', 'NA', '1', 'NA', '1', 'Alekhya');
+INSERT INTO `lms-database`.`candidate_qualification` (`candidate_id`, `degree_name`, `is_degree_name_verified`, `employee_discipline`, `is_employee_discipline_verified`,
+ `passing_year`, `is_passing_year_verified`, `final_year_percentage`, `is_final_year_percentage_verified`, `training_institute`, `is_training_institute_verified`,
+ `training_duration_month`, `is_training_duration_month_verified`, `other_training`, `is_other_training_verified`, `creator_user`)
+ VALUES ('9', 'BE', '1', 'MECH', '1', '2019', '1', '79', '1', 'NA', '1', 'NA', '1', 'NA', '1', 'Alekhya');
+INSERT INTO `lms-database`.`candidate_qualification` (`candidate_id`, `degree_name`, `is_degree_name_verified`, `employee_discipline`, `is_employee_discipline_verified`,
+ `passing_year`, `is_passing_year_verified`, `final_year_percentage`, `is_final_year_percentage_verified`, `training_institute`, `is_training_institute_verified`,
+ `training_duration_month`, `is_training_duration_month_verified`, `other_training`, `is_other_training_verified`, `creator_user`)
+ VALUES ('10', 'MCA', '1', 'EEE', '1', '2019', '1', '72', '1', 'NA', '1', 'NA', '1', 'NA', '1', 'Alekhya');
+INSERT INTO `lms-database`.`candidate_qualification` (`candidate_id`, `degree_name`, `is_degree_name_verified`, `employee_discipline`, `is_employee_discipline_verified`,
+ `passing_year`, `is_passing_year_verified`, `final_year_percentage`, `is_final_year_percentage_verified`, `training_institute`, `is_training_institute_verified`,
+ `training_duration_month`, `is_training_duration_month_verified`, `other_training`, `is_other_training_verified`, `creator_user`)
+ VALUES ('11', 'ME', '1', 'COMPUTERS', '1', '2018', '1', '76', '1', 'NA', '1', 'NA', '1', 'NA', '1', 'Alekhya');
+INSERT INTO `lms-database`.`candidate_qualification` (`candidate_id`, `degree_name`, `is_degree_name_verified`, `employee_discipline`, `is_employee_discipline_verified`,
+ `passing_year`, `is_passing_year_verified`, `final_year_percentage`, `is_final_year_percentage_verified`, `training_institute`, `is_training_institute_verified`,
+ `training_duration_month`, `is_training_duration_month_verified`, `other_training`, `is_other_training_verified`, `creator_user`)
+ VALUES ('12', 'BE', '1', 'MECH', '1', '2019', '1', '75', '1', 'NA', '1', 'NA', '1', 'NA', '1', 'Alekhya');
+INSERT INTO `lms-database`.`candidate_qualification` (`candidate_id`, `degree_name`, `is_degree_name_verified`, `employee_discipline`, `is_employee_discipline_verified`,
+ `passing_year`, `is_passing_year_verified`, `final_year_percentage`, `is_final_year_percentage_verified`, `training_institute`, `is_training_institute_verified`,
+ `training_duration_month`, `is_training_duration_month_verified`, `other_training`, `is_other_training_verified`, `creator_user`)
+ VALUES ('13', 'MCA', '1', 'ECE', '1', '2018', '1', '74', '1', 'NA', '1', 'NA', '1', 'NA', '1', 'Alekhya');
+INSERT INTO `lms-database`.`candidate_qualification` (`candidate_id`, `degree_name`, `is_degree_name_verified`, `employee_discipline`, `is_employee_discipline_verified`,
+ `passing_year`, `is_passing_year_verified`, `final_year_percentage`, `is_final_year_percentage_verified`, `training_institute`, `is_training_institute_verified`,
+ `training_duration_month`, `is_training_duration_month_verified`, `other_training`, `is_other_training_verified`, `creator_user`)
+ VALUES ('14', 'BE', '1', 'EEE', '1', '2018', '1', '73', '1', 'NA', '1', 'NA', '1', 'NA', '1', 'Alekhya');
+INSERT INTO `lms-database`.`candidate_qualification` (`candidate_id`, `degree_name`, `is_degree_name_verified`, `employee_discipline`, `is_employee_discipline_verified`,
+ `passing_year`, `is_passing_year_verified`, `final_year_percentage`, `is_final_year_percentage_verified`, `training_institute`, `is_training_institute_verified`,
+ `training_duration_month`, `is_training_duration_month_verified`, `other_training`, `is_other_training_verified`, `creator_user`)
+ VALUES ('15', 'BE', '1', 'COMPUTERS', '1', '2018', '1', '79', '1', 'NA', '1', 'NA', '1', 'NA', '1', 'Alekhya');
+INSERT INTO `lms-database`.`candidate_qualification` (`candidate_id`, `degree_name`, `is_degree_name_verified`, `employee_discipline`, `is_employee_discipline_verified`,
+ `passing_year`, `is_passing_year_verified`, `final_year_percentage`, `is_final_year_percentage_verified`, `training_institute`, `is_training_institute_verified`,
+ `training_duration_month`, `is_training_duration_month_verified`, `other_training`, `is_other_training_verified`, `creator_user`)
+ VALUES ('16', 'BE', '1', 'MECH', '1', '2018', '1', '72', '1', 'NA', '1', 'NA', '1', 'NA', '1', 'Alekhya');
+INSERT INTO `lms-database`.`candidate_qualification` (`candidate_id`, `degree_name`, `is_degree_name_verified`, `employee_discipline`, `is_employee_discipline_verified`,
+ `passing_year`, `is_passing_year_verified`, `final_year_percentage`, `is_final_year_percentage_verified`, `training_institute`, `is_training_institute_verified`,
+ `training_duration_month`, `is_training_duration_month_verified`, `other_training`, `is_other_training_verified`, `creator_user`)
+ VALUES ('17', 'ME', '1', 'EEE', '1', '2018', '1', '71', '1', 'NA', '1', 'NA', '1', 'NA', '1', 'Alekhya');
+INSERT INTO `lms-database`.`candidate_qualification` (`candidate_id`, `degree_name`, `is_degree_name_verified`, `employee_discipline`, `is_employee_discipline_verified`,
+ `passing_year`, `is_passing_year_verified`, `final_year_percentage`, `is_final_year_percentage_verified`, `training_institute`, `is_training_institute_verified`,
+ `training_duration_month`, `is_training_duration_month_verified`, `other_training`, `is_other_training_verified`, `creator_user`)
+ VALUES ('18', 'BE', '1', 'COMPUTERS', '1', '2019', '1', '70', '1', 'NA', '1', 'NA', '1', 'NA', '1', 'Alekhya');
+INSERT INTO `lms-database`.`candidate_qualification` (`candidate_id`, `degree_name`, `is_degree_name_verified`, `employee_discipline`, `is_employee_discipline_verified`,
+ `passing_year`, `is_passing_year_verified`, `final_year_percentage`, `is_final_year_percentage_verified`, `training_institute`, `is_training_institute_verified`,
+ `training_duration_month`, `is_training_duration_month_verified`, `other_training`, `is_other_training_verified`, `creator_user`)
+ VALUES ('19', 'MCA', '1', 'COMPUTERS', '1', '2019', '1', '77', '1', 'NA', '1', 'NA', '1', 'NA', '1', 'Alekhya');
+INSERT INTO `lms-database`.`candidate_qualification` (`candidate_id`, `degree_name`, `is_degree_name_verified`, `employee_discipline`, `is_employee_discipline_verified`,
+ `passing_year`, `is_passing_year_verified`, `final_year_percentage`, `is_final_year_percentage_verified`, `training_institute`, `is_training_institute_verified`,
+ `training_duration_month`, `is_training_duration_month_verified`, `other_training`, `is_other_training_verified`, `creator_user`)
+ VALUES ('20', 'ME', '1', 'ECE', '1', '2019', '1', '70', '1', 'NA', '1', 'NA', '1', 'NA', '1', 'Alekhya');
+INSERT INTO `lms-database`.`candidate_qualification` (`candidate_id`, `degree_name`, `is_degree_name_verified`, `employee_discipline`, `is_employee_discipline_verified`,
+ `passing_year`, `is_passing_year_verified`, `final_year_percentage`, `is_final_year_percentage_verified`, `training_institute`, `is_training_institute_verified`,
+ `training_duration_month`, `is_training_duration_month_verified`, `other_training`, `is_other_training_verified`, `creator_user`)
+ VALUES ('21', 'BE', '1', 'COMPUTERS', '1', '2019', '1', '69', '1', 'NA', '1', 'NA', '1', 'NA', '1', 'Alekhya');
+INSERT INTO `lms-database`.`candidate_qualification` (`candidate_id`, `degree_name`, `is_degree_name_verified`, `employee_discipline`, 
+	`is_employee_discipline_verified`, `passing_year`, `is_passing_year_verified`, `final_year_percentage`, `is_final_year_percentage_verified`, `training_institute`,
+    `is_training_institute_verified`, `training_duration_month`, `is_training_duration_month_verified`, `other_training`, `is_other_training_verified`, `creator_user`)
+    VALUES ('22', 'MCA', '1', 'EEE', '1', '2018', '1', '76.6', '1', 'NA', '1', 'NA', '1', 'NA', '1', 'Alekhya');
+INSERT INTO `lms-database`.`candidate_qualification` (`candidate_id`, `degree_name`, `is_degree_name_verified`, `employee_discipline`, `is_employee_discipline_verified`,
+ `passing_year`, `is_passing_year_verified`, `final_year_percentage`, `is_final_year_percentage_verified`, `training_institute`, `is_training_institute_verified`,
+ `training_duration_month`, `is_training_duration_month_verified`, `other_training`, `is_other_training_verified`, `creator_user`)
+ VALUES ('23', 'BE', '1', 'COMPUTERS','1', '2019', '1', '78', '1', 'NA', '1', 'NA', '1', 'NA', '1', 'Alekhya');
+INSERT INTO `lms-database`.`candidate_qualification` (`candidate_id`, `degree_name`, `is_degree_name_verified`, `employee_discipline`, `is_employee_discipline_verified`,
+ `passing_year`, `is_passing_year_verified`, `final_year_percentage`, `is_final_year_percentage_verified`, `training_institute`, `is_training_institute_verified`,
+ `training_duration_month`, `is_training_duration_month_verified`, `other_training`, `is_other_training_verified`, `creator_user`)
+ VALUES ('24', 'BE', '1', 'MECH', '1', '2019', '1', '79', '1', 'NA', '1', 'NA', '1', 'NA', '1', 'Alekhya');
+INSERT INTO `lms-database`.`candidate_qualification` (`candidate_id`, `degree_name`, `is_degree_name_verified`, `employee_discipline`, `is_employee_discipline_verified`,
+ `passing_year`, `is_passing_year_verified`, `final_year_percentage`, `is_final_year_percentage_verified`, `training_institute`, `is_training_institute_verified`,
+ `training_duration_month`, `is_training_duration_month_verified`, `other_training`, `is_other_training_verified`, `creator_user`)
+ VALUES ('25', 'ME', '1', 'EEE', '1', '2019', '1', '72', '1', 'NA', '1', 'NA', '1', 'NA', '1', 'Alekhya');
+INSERT INTO `lms-database`.`candidate_qualification` (`candidate_id`, `degree_name`, `is_degree_name_verified`, `employee_discipline`, `is_employee_discipline_verified`,
+ `passing_year`, `is_passing_year_verified`, `final_year_percentage`, `is_final_year_percentage_verified`, `training_institute`, `is_training_institute_verified`,
+ `training_duration_month`, `is_training_duration_month_verified`, `other_training`, `is_other_training_verified`, `creator_user`)
+ VALUES ('26', 'ME', '1', 'COMPUTERS', '1', '2018', '1', '76', '1', 'NA', '1', 'NA', '1', 'NA', '1', 'Alekhya');
+INSERT INTO `lms-database`.`candidate_qualification` (`candidate_id`, `degree_name`, `is_degree_name_verified`, `employee_discipline`, `is_employee_discipline_verified`,
+ `passing_year`, `is_passing_year_verified`, `final_year_percentage`, `is_final_year_percentage_verified`, `training_institute`, `is_training_institute_verified`,
+ `training_duration_month`, `is_training_duration_month_verified`, `other_training`, `is_other_training_verified`, `creator_user`)
+ VALUES ('27', 'BE', '1', 'MECH', '1', '2019', '1', '75', '1', 'NA', '1', 'NA', '1', 'NA', '1', 'Alekhya');
+INSERT INTO `lms-database`.`candidate_qualification` (`candidate_id`, `degree_name`, `is_degree_name_verified`, `employee_discipline`, `is_employee_discipline_verified`,
+ `passing_year`, `is_passing_year_verified`, `final_year_percentage`, `is_final_year_percentage_verified`, `training_institute`, `is_training_institute_verified`,
+ `training_duration_month`, `is_training_duration_month_verified`, `other_training`, `is_other_training_verified`, `creator_user`)
+ VALUES ('28', 'MCA', '1', 'ECE', '1', '2018', '1', '74', '1', 'NA', '1', 'NA', '1', 'NA', '1', 'Alekhya');
+INSERT INTO `lms-database`.`candidate_qualification` (`candidate_id`, `degree_name`, `is_degree_name_verified`, `employee_discipline`, `is_employee_discipline_verified`,
+ `passing_year`, `is_passing_year_verified`, `final_year_percentage`, `is_final_year_percentage_verified`, `training_institute`, `is_training_institute_verified`,
+ `training_duration_month`, `is_training_duration_month_verified`, `other_training`, `is_other_training_verified`, `creator_user`)
+ VALUES ('31', 'BE', '1', 'EEE', '1', '2018', '1', '73', '1', 'NA', '1', 'NA', '1', 'NA', '1', 'Alekhya');
+INSERT INTO `lms-database`.`candidate_qualification` (`candidate_id`, `degree_name`, `is_degree_name_verified`, `employee_discipline`, `is_employee_discipline_verified`,
+ `passing_year`, `is_passing_year_verified`, `final_year_percentage`, `is_final_year_percentage_verified`, `training_institute`, `is_training_institute_verified`,
+ `training_duration_month`, `is_training_duration_month_verified`, `other_training`, `is_other_training_verified`, `creator_user`)
+ VALUES ('32', 'MCA', '1', 'COMPUTERS', '1', '2018', '1', '79', '1', 'NA', '1', 'NA', '1', 'NA', '1', 'Alekhya');
+INSERT INTO `lms-database`.`candidate_qualification` (`candidate_id`, `degree_name`, `is_degree_name_verified`, `employee_discipline`, `is_employee_discipline_verified`,
+ `passing_year`, `is_passing_year_verified`, `final_year_percentage`, `is_final_year_percentage_verified`, `training_institute`, `is_training_institute_verified`,
+ `training_duration_month`, `is_training_duration_month_verified`, `other_training`, `is_other_training_verified`, `creator_user`)
+ VALUES ('33', 'BE', '1', 'MECH', '1', '2018', '1', '72', '1', 'NA', '1', 'NA', '1', 'NA', '1', 'Alekhya');
+INSERT INTO `lms-database`.`candidate_qualification` (`candidate_id`, `degree_name`, `is_degree_name_verified`, `employee_discipline`, `is_employee_discipline_verified`,
+ `passing_year`, `is_passing_year_verified`, `final_year_percentage`, `is_final_year_percentage_verified`, `training_institute`, `is_training_institute_verified`,
+ `training_duration_month`, `is_training_duration_month_verified`, `other_training`, `is_other_training_verified`, `creator_user`)
+ VALUES ('34', 'BE', '1', 'EEE', '1', '2018', '1', '71', '1', 'NA', '1', 'NA', '1', 'NA', '1', 'Alekhya');
+INSERT INTO `lms-database`.`candidate_qualification` (`candidate_id`, `degree_name`, `is_degree_name_verified`, `employee_discipline`, `is_employee_discipline_verified`,
+ `passing_year`, `is_passing_year_verified`, `final_year_percentage`, `is_final_year_percentage_verified`, `training_institute`, `is_training_institute_verified`,
+ `training_duration_month`, `is_training_duration_month_verified`, `other_training`, `is_other_training_verified`, `creator_user`)
+ VALUES ('35', 'ME', '1', 'COMPUTERS', '1', '2019', '1', '70', '1', 'NA', '1', 'NA', '1', 'NA', '1', 'Alekhya');
+INSERT INTO `lms-database`.`candidate_qualification` (`candidate_id`, `degree_name`, `is_degree_name_verified`, `employee_discipline`, `is_employee_discipline_verified`,
+ `passing_year`, `is_passing_year_verified`, `final_year_percentage`, `is_final_year_percentage_verified`, `training_institute`, `is_training_institute_verified`,
+ `training_duration_month`, `is_training_duration_month_verified`, `other_training`, `is_other_training_verified`, `creator_user`)
+ VALUES ('36', 'ME', '1', 'COMPUTERS', '1', '2019', '1', '77', '1', 'NA', '1', 'NA', '1', 'NA', '1', 'Alekhya');
+INSERT INTO `lms-database`.`candidate_qualification` (`candidate_id`, `degree_name`, `is_degree_name_verified`, `employee_discipline`, `is_employee_discipline_verified`,
+ `passing_year`, `is_passing_year_verified`, `final_year_percentage`, `is_final_year_percentage_verified`, `training_institute`, `is_training_institute_verified`,
+ `training_duration_month`, `is_training_duration_month_verified`, `other_training`, `is_other_training_verified`, `creator_user`)
+ VALUES ('37', 'BE', '1', 'ECE', '1', '2019', '1', '70', '1', 'NA', '1', 'NA', '1', 'NA', '1', 'Alekhya');
+INSERT INTO `lms-database`.`candidate_qualification` (`candidate_id`, `degree_name`, `is_degree_name_verified`, `employee_discipline`, `is_employee_discipline_verified`,
+ `passing_year`, `is_passing_year_verified`, `final_year_percentage`, `is_final_year_percentage_verified`, `training_institute`, `is_training_institute_verified`,
+ `training_duration_month`, `is_training_duration_month_verified`, `other_training`, `is_other_training_verified`, `creator_user`)
+ VALUES ('38', 'MCA', '1', 'COMPUTERS', '1', '2019', '1', '69', '1', 'NA', '1', 'NA', '1', 'NA', '1', 'Alekhya');
+INSERT INTO `lms-database`.`candidate_qualification` (`candidate_id`, `degree_name`, `is_degree_name_verified`, `employee_discipline`, 
+	`is_employee_discipline_verified`, `passing_year`, `is_passing_year_verified`, `final_year_percentage`, `is_final_year_percentage_verified`, `training_institute`,
+    `is_training_institute_verified`, `training_duration_month`, `is_training_duration_month_verified`, `other_training`, `is_other_training_verified`, `creator_user`)
+    VALUES ('39', 'ME', '1', 'EEE', '1', '2018', '1', '76.6', '1', 'NA', '1', 'NA', '1', 'NA', '1', 'Alekhya');
+INSERT INTO `lms-database`.`candidate_qualification` (`candidate_id`, `degree_name`, `is_degree_name_verified`, `employee_discipline`, `is_employee_discipline_verified`,
+ `passing_year`, `is_passing_year_verified`, `final_year_percentage`, `is_final_year_percentage_verified`, `training_institute`, `is_training_institute_verified`,
+ `training_duration_month`, `is_training_duration_month_verified`, `other_training`, `is_other_training_verified`, `creator_user`)
+ VALUES ('40', 'BE', '1', 'COMPUTERS','1', '2019', '1', '78', '1', 'NA', '1', 'NA', '1', 'NA', '1', 'Alekhya');
+INSERT INTO `lms-database`.`candidate_qualification` (`candidate_id`, `degree_name`, `is_degree_name_verified`, `employee_discipline`, `is_employee_discipline_verified`,
+ `passing_year`, `is_passing_year_verified`, `final_year_percentage`, `is_final_year_percentage_verified`, `training_institute`, `is_training_institute_verified`,
+ `training_duration_month`, `is_training_duration_month_verified`, `other_training`, `is_other_training_verified`, `creator_user`)
+ VALUES ('41', 'MCA', '1', 'MECH', '1', '2019', '1', '79', '1', 'NA', '1', 'NA', '1', 'NA', '1', 'Alekhya');
+INSERT INTO `lms-database`.`candidate_qualification` (`candidate_id`, `degree_name`, `is_degree_name_verified`, `employee_discipline`, `is_employee_discipline_verified`,
+ `passing_year`, `is_passing_year_verified`, `final_year_percentage`, `is_final_year_percentage_verified`, `training_institute`, `is_training_institute_verified`,
+ `training_duration_month`, `is_training_duration_month_verified`, `other_training`, `is_other_training_verified`, `creator_user`)
+ VALUES ('42', 'BE', '1', 'EEE', '1', '2019', '1', '72', '1', 'NA', '1', 'NA', '1', 'NA', '1', 'Alekhya');
+INSERT INTO `lms-database`.`candidate_qualification` (`candidate_id`, `degree_name`, `is_degree_name_verified`, `employee_discipline`, `is_employee_discipline_verified`,
+ `passing_year`, `is_passing_year_verified`, `final_year_percentage`, `is_final_year_percentage_verified`, `training_institute`, `is_training_institute_verified`,
+ `training_duration_month`, `is_training_duration_month_verified`, `other_training`, `is_other_training_verified`, `creator_user`)
+ VALUES ('43', 'BE', '1', 'COMPUTERS', '1', '2018', '1', '76', '1', 'NA', '1', 'NA', '1', 'NA', '1', 'Alekhya');
+INSERT INTO `lms-database`.`candidate_qualification` (`candidate_id`, `degree_name`, `is_degree_name_verified`, `employee_discipline`, `is_employee_discipline_verified`,
+ `passing_year`, `is_passing_year_verified`, `final_year_percentage`, `is_final_year_percentage_verified`, `training_institute`, `is_training_institute_verified`,
+ `training_duration_month`, `is_training_duration_month_verified`, `other_training`, `is_other_training_verified`, `creator_user`)
+ VALUES ('44', 'ME', '1', 'MECH', '1', '2019', '1', '75', '1', 'NA', '1', 'NA', '1', 'NA', '1', 'Alekhya');
+INSERT INTO `lms-database`.`candidate_qualification` (`candidate_id`, `degree_name`, `is_degree_name_verified`, `employee_discipline`, `is_employee_discipline_verified`,
+ `passing_year`, `is_passing_year_verified`, `final_year_percentage`, `is_final_year_percentage_verified`, `training_institute`, `is_training_institute_verified`,
+ `training_duration_month`, `is_training_duration_month_verified`, `other_training`, `is_other_training_verified`, `creator_user`)
+ VALUES ('45', 'ME', '1', 'ECE', '1', '2018', '1', '74', '1', 'NA', '1', 'NA', '1', 'NA', '1', 'Alekhya');
+INSERT INTO `lms-database`.`candidate_qualification` (`candidate_id`, `degree_name`, `is_degree_name_verified`, `employee_discipline`, `is_employee_discipline_verified`,
+ `passing_year`, `is_passing_year_verified`, `final_year_percentage`, `is_final_year_percentage_verified`, `training_institute`, `is_training_institute_verified`,
+ `training_duration_month`, `is_training_duration_month_verified`, `other_training`, `is_other_training_verified`, `creator_user`)
+ VALUES ('46', 'BE', '1', 'EEE', '1', '2018', '1', '73', '1', 'NA', '1', 'NA', '1', 'NA', '1', 'Alekhya');
+INSERT INTO `lms-database`.`candidate_qualification` (`candidate_id`, `degree_name`, `is_degree_name_verified`, `employee_discipline`, `is_employee_discipline_verified`,
+ `passing_year`, `is_passing_year_verified`, `final_year_percentage`, `is_final_year_percentage_verified`, `training_institute`, `is_training_institute_verified`,
+ `training_duration_month`, `is_training_duration_month_verified`, `other_training`, `is_other_training_verified`, `creator_user`)
+ VALUES ('47', 'MCA', '1', 'COMPUTERS', '1', '2018', '1', '79', '1', 'NA', '1', 'NA', '1', 'NA', '1', 'Alekhya');
+INSERT INTO `lms-database`.`candidate_qualification` (`candidate_id`, `degree_name`, `is_degree_name_verified`, `employee_discipline`, `is_employee_discipline_verified`,
+ `passing_year`, `is_passing_year_verified`, `final_year_percentage`, `is_final_year_percentage_verified`, `training_institute`, `is_training_institute_verified`,
+ `training_duration_month`, `is_training_duration_month_verified`, `other_training`, `is_other_training_verified`, `creator_user`)
+ VALUES ('48', 'BE', '1', 'MECH', '1', '2018', '1', '72', '1', 'NA', '1', 'NA', '1', 'NA', '1', 'Alekhya');
+INSERT INTO `lms-database`.`candidate_qualification` (`candidate_id`, `degree_name`, `is_degree_name_verified`, `employee_discipline`, `is_employee_discipline_verified`,
+ `passing_year`, `is_passing_year_verified`, `final_year_percentage`, `is_final_year_percentage_verified`, `training_institute`, `is_training_institute_verified`,
+ `training_duration_month`, `is_training_duration_month_verified`, `other_training`, `is_other_training_verified`, `creator_user`)
+ VALUES ('49', 'ME', '1', 'EEE', '1', '2018', '1', '71', '1', 'NA', '1', 'NA', '1', 'NA', '1', 'Alekhya');
+INSERT INTO `lms-database`.`candidate_qualification` (`candidate_id`, `degree_name`, `is_degree_name_verified`, `employee_discipline`, `is_employee_discipline_verified`,
+ `passing_year`, `is_passing_year_verified`, `final_year_percentage`, `is_final_year_percentage_verified`, `training_institute`, `is_training_institute_verified`,
+ `training_duration_month`, `is_training_duration_month_verified`, `other_training`, `is_other_training_verified`, `creator_user`)
+ VALUES ('50', 'BE', '1', 'COMPUTERS', '1', '2019', '1', '70', '1', 'NA', '1', 'NA', '1', 'NA', '1', 'Alekhya');
+INSERT INTO `lms-database`.`candidate_qualification` (`candidate_id`, `degree_name`, `is_degree_name_verified`, `employee_discipline`, `is_employee_discipline_verified`,
+ `passing_year`, `is_passing_year_verified`, `final_year_percentage`, `is_final_year_percentage_verified`, `training_institute`, `is_training_institute_verified`,
+ `training_duration_month`, `is_training_duration_month_verified`, `other_training`, `is_other_training_verified`, `creator_user`)
+ VALUES ('51', 'MCA', '1', 'COMPUTERS', '1', '2019', '1', '77', '1', 'NA', '1', 'NA', '1', 'NA', '1', 'Alekhya');
+INSERT INTO `lms-database`.`candidate_qualification` (`candidate_id`, `degree_name`, `is_degree_name_verified`, `employee_discipline`, `is_employee_discipline_verified`,
+ `passing_year`, `is_passing_year_verified`, `final_year_percentage`, `is_final_year_percentage_verified`, `training_institute`, `is_training_institute_verified`,
+ `training_duration_month`, `is_training_duration_month_verified`, `other_training`, `is_other_training_verified`, `creator_user`)
+ VALUES ('52', 'BE', '1', 'ECE', '1', '2019', '1', '70', '1', 'NA', '1', 'NA', '1', 'NA', '1', 'Alekhya');
+INSERT INTO `lms-database`.`candidate_qualification` (`candidate_id`, `degree_name`, `is_degree_name_verified`, `employee_discipline`, `is_employee_discipline_verified`,
+ `passing_year`, `is_passing_year_verified`, `final_year_percentage`, `is_final_year_percentage_verified`, `training_institute`, `is_training_institute_verified`,
+ `training_duration_month`, `is_training_duration_month_verified`, `other_training`, `is_other_training_verified`, `creator_user`)
+ VALUES ('53', 'ME', '1', 'COMPUTERS', '1', '2019', '1', '69', '1', 'NA', '1', 'NA', '1', 'NA', '1', 'Alekhya');
+INSERT INTO `lms-database`.`candidate_qualification` (`candidate_id`, `degree_name`, `is_degree_name_verified`, `employee_discipline`, 
+	`is_employee_discipline_verified`, `passing_year`, `is_passing_year_verified`, `final_year_percentage`, `is_final_year_percentage_verified`, `training_institute`,
+    `is_training_institute_verified`, `training_duration_month`, `is_training_duration_month_verified`, `other_training`, `is_other_training_verified`, `creator_user`)
+    VALUES ('54', 'ME', '1', 'EEE', '1', '2018', '1', '76.6', '1', 'NA', '1', 'NA', '1', 'NA', '1', 'Alekhya');
+INSERT INTO `lms-database`.`candidate_qualification` (`candidate_id`, `degree_name`, `is_degree_name_verified`, `employee_discipline`, `is_employee_discipline_verified`,
+ `passing_year`, `is_passing_year_verified`, `final_year_percentage`, `is_final_year_percentage_verified`, `training_institute`, `is_training_institute_verified`,
+ `training_duration_month`, `is_training_duration_month_verified`, `other_training`, `is_other_training_verified`, `creator_user`)
+ VALUES ('55', 'BE', '1', 'COMPUTERS','1', '2019', '1', '78', '1', 'NA', '1', 'NA', '1', 'NA', '1', 'Alekhya');
+INSERT INTO `lms-database`.`candidate_qualification` (`candidate_id`, `degree_name`, `is_degree_name_verified`, `employee_discipline`, `is_employee_discipline_verified`,
+ `passing_year`, `is_passing_year_verified`, `final_year_percentage`, `is_final_year_percentage_verified`, `training_institute`, `is_training_institute_verified`,
+ `training_duration_month`, `is_training_duration_month_verified`, `other_training`, `is_other_training_verified`, `creator_user`)
+ VALUES ('56', 'MCA', '1', 'COMPUTERS', '1', '2019', '1', '79', '1', 'NA', '1', 'NA', '1', 'NA', '1', 'Alekhya');
+INSERT INTO `lms-database`.`candidate_qualification` (`candidate_id`, `degree_name`, `is_degree_name_verified`, `employee_discipline`, `is_employee_discipline_verified`,
+ `passing_year`, `is_passing_year_verified`, `final_year_percentage`, `is_final_year_percentage_verified`, `training_institute`, `is_training_institute_verified`,
+ `training_duration_month`, `is_training_duration_month_verified`, `other_training`, `is_other_training_verified`, `creator_user`)
+ VALUES ('57', 'BE', '1', 'EEE', '1', '2019', '1', '72', '1', 'NA', '1', 'NA', '1', 'NA', '1', 'Alekhya');
+INSERT INTO `lms-database`.`candidate_qualification` (`candidate_id`, `degree_name`, `is_degree_name_verified`, `employee_discipline`, `is_employee_discipline_verified`,
+ `passing_year`, `is_passing_year_verified`, `final_year_percentage`, `is_final_year_percentage_verified`, `training_institute`, `is_training_institute_verified`,
+ `training_duration_month`, `is_training_duration_month_verified`, `other_training`, `is_other_training_verified`, `creator_user`)
+ VALUES ('58', 'ME', '1', 'COMPUTERS', '1', '2018', '1', '76', '1', 'NA', '1', 'NA', '1', 'NA', '1', 'Alekhya');
+INSERT INTO `lms-database`.`candidate_qualification` (`candidate_id`, `degree_name`, `is_degree_name_verified`, `employee_discipline`, `is_employee_discipline_verified`,
+ `passing_year`, `is_passing_year_verified`, `final_year_percentage`, `is_final_year_percentage_verified`, `training_institute`, `is_training_institute_verified`,
+ `training_duration_month`, `is_training_duration_month_verified`, `other_training`, `is_other_training_verified`, `creator_user`)
+ VALUES ('59', 'BE', '1', 'MECH', '1', '2019', '1', '75', '1', 'NA', '1', 'NA', '1', 'NA', '1', 'Alekhya');
+INSERT INTO `lms-database`.`candidate_qualification` (`candidate_id`, `degree_name`, `is_degree_name_verified`, `employee_discipline`, `is_employee_discipline_verified`,
+ `passing_year`, `is_passing_year_verified`, `final_year_percentage`, `is_final_year_percentage_verified`, `training_institute`, `is_training_institute_verified`,
+ `training_duration_month`, `is_training_duration_month_verified`, `other_training`, `is_other_training_verified`, `creator_user`)
+ VALUES ('60', 'MCA', '1', 'COMPUTERS', '1', '2018', '1', '74', '1', 'NA', '1', 'NA', '1', 'NA', '1', 'Alekhya');
+INSERT INTO `lms-database`.`candidate_qualification` (`candidate_id`, `degree_name`, `is_degree_name_verified`, `employee_discipline`, `is_employee_discipline_verified`,
+ `passing_year`, `is_passing_year_verified`, `final_year_percentage`, `is_final_year_percentage_verified`, `training_institute`, `is_training_institute_verified`,
+ `training_duration_month`, `is_training_duration_month_verified`, `other_training`, `is_other_training_verified`, `creator_user`)
+ VALUES ('61', 'BE', '1', 'EEE', '1', '2018', '1', '73', '1', 'NA', '1', 'NA', '1', 'NA', '1', 'Alekhya');
+INSERT INTO `lms-database`.`candidate_qualification` (`candidate_id`, `degree_name`, `is_degree_name_verified`, `employee_discipline`, `is_employee_discipline_verified`,
+ `passing_year`, `is_passing_year_verified`, `final_year_percentage`, `is_final_year_percentage_verified`, `training_institute`, `is_training_institute_verified`,
+ `training_duration_month`, `is_training_duration_month_verified`, `other_training`, `is_other_training_verified`, `creator_user`)
+ VALUES ('62', 'ME', '1', 'COMPUTERS', '1', '2018', '1', '79', '1', 'NA', '1', 'NA', '1', 'NA', '1', 'Alekhya');
+INSERT INTO `lms-database`.`candidate_qualification` (`candidate_id`, `degree_name`, `is_degree_name_verified`, `employee_discipline`, `is_employee_discipline_verified`,
+ `passing_year`, `is_passing_year_verified`, `final_year_percentage`, `is_final_year_percentage_verified`, `training_institute`, `is_training_institute_verified`,
+ `training_duration_month`, `is_training_duration_month_verified`, `other_training`, `is_other_training_verified`, `creator_user`)
+ VALUES ('63', 'ME', '1', 'MECH', '1', '2018', '1', '72', '1', 'NA', '1', 'NA', '1', 'NA', '1', 'Alekhya');
+INSERT INTO `lms-database`.`candidate_qualification` (`candidate_id`, `degree_name`, `is_degree_name_verified`, `employee_discipline`, `is_employee_discipline_verified`,
+ `passing_year`, `is_passing_year_verified`, `final_year_percentage`, `is_final_year_percentage_verified`, `training_institute`, `is_training_institute_verified`,
+ `training_duration_month`, `is_training_duration_month_verified`, `other_training`, `is_other_training_verified`, `creator_user`)
+ VALUES ('64', 'MCA', '1', 'COMPUTERS', '1', '2018', '1', '71', '1', 'NA', '1', 'NA', '1', 'NA', '1', 'Alekhya');
+INSERT INTO `lms-database`.`candidate_qualification` (`candidate_id`, `degree_name`, `is_degree_name_verified`, `employee_discipline`, `is_employee_discipline_verified`,
+ `passing_year`, `is_passing_year_verified`, `final_year_percentage`, `is_final_year_percentage_verified`, `training_institute`, `is_training_institute_verified`,
+ `training_duration_month`, `is_training_duration_month_verified`, `other_training`, `is_other_training_verified`, `creator_user`)
+ VALUES ('65', 'BE', '1', 'COMPUTERS', '1', '2019', '1', '70', '1', 'NA', '1', 'NA', '1', 'NA', '1', 'Alekhya');
+INSERT INTO `lms-database`.`candidate_qualification` (`candidate_id`, `degree_name`, `is_degree_name_verified`, `employee_discipline`, `is_employee_discipline_verified`,
+ `passing_year`, `is_passing_year_verified`, `final_year_percentage`, `is_final_year_percentage_verified`, `training_institute`, `is_training_institute_verified`,
+ `training_duration_month`, `is_training_duration_month_verified`, `other_training`, `is_other_training_verified`, `creator_user`)
+ VALUES ('66', 'BE', '1', 'COMPUTERS', '1', '2019', '1', '77', '1', 'NA', '1', 'NA', '1', 'NA', '1', 'Alekhya');
+INSERT INTO `lms-database`.`candidate_qualification` (`candidate_id`, `degree_name`, `is_degree_name_verified`, `employee_discipline`, `is_employee_discipline_verified`,
+ `passing_year`, `is_passing_year_verified`, `final_year_percentage`, `is_final_year_percentage_verified`, `training_institute`, `is_training_institute_verified`,
+ `training_duration_month`, `is_training_duration_month_verified`, `other_training`, `is_other_training_verified`, `creator_user`)
+ VALUES ('67', 'BE', '1', 'ECE', '1', '2019', '1', '70', '1', 'NA', '1', 'NA', '1', 'NA', '1', 'Alekhya');
+INSERT INTO `lms-database`.`candidate_qualification` (`candidate_id`, `degree_name`, `is_degree_name_verified`, `employee_discipline`, `is_employee_discipline_verified`,
+ `passing_year`, `is_passing_year_verified`, `final_year_percentage`, `is_final_year_percentage_verified`, `training_institute`, `is_training_institute_verified`,
+ `training_duration_month`, `is_training_duration_month_verified`, `other_training`, `is_other_training_verified`, `creator_user`)
+ VALUES ('68', 'MCA', '1', 'COMPUTERS', '1', '2019', '1', '69', '1', 'NA', '1', 'NA', '1', 'NA', '1', 'Alekhya');
+INSERT INTO `lms-database`.`candidate_qualification` (`candidate_id`, `degree_name`, `is_degree_name_verified`, `employee_discipline`, `is_employee_discipline_verified`,
+ `passing_year`, `is_passing_year_verified`, `final_year_percentage`, `is_final_year_percentage_verified`, `training_institute`, `is_training_institute_verified`,
+ `training_duration_month`, `is_training_duration_month_verified`, `other_training`, `is_other_training_verified`, `creator_user`)
+ VALUES ('69', 'BE', '1', 'COMPUTERS', '1', '2018', '1', '79', '1', 'NA', '1', 'NA', '1', 'NA', '1', 'Alekhya');
+INSERT INTO `lms-database`.`candidate_qualification` (`candidate_id`, `degree_name`, `is_degree_name_verified`, `employee_discipline`, `is_employee_discipline_verified`,
+ `passing_year`, `is_passing_year_verified`, `final_year_percentage`, `is_final_year_percentage_verified`, `training_institute`, `is_training_institute_verified`,
+ `training_duration_month`, `is_training_duration_month_verified`, `other_training`, `is_other_training_verified`, `creator_user`)
+ VALUES ('70', 'ME', '1', 'MECH', '1', '2018', '1', '72', '1', 'NA', '1', 'NA', '1', 'NA', '1', 'Alekhya');
+INSERT INTO `lms-database`.`candidate_qualification` (`candidate_id`, `degree_name`, `is_degree_name_verified`, `employee_discipline`, `is_employee_discipline_verified`,
+ `passing_year`, `is_passing_year_verified`, `final_year_percentage`, `is_final_year_percentage_verified`, `training_institute`, `is_training_institute_verified`,
+ `training_duration_month`, `is_training_duration_month_verified`, `other_training`, `is_other_training_verified`, `creator_user`)
+ VALUES ('71', 'BE', '1', 'COMPUTERS', '1', '2018', '1', '71', '1', 'NA', '1', 'NA', '1', 'NA', '1', 'Alekhya');
+INSERT INTO `lms-database`.`candidate_qualification` (`candidate_id`, `degree_name`, `is_degree_name_verified`, `employee_discipline`, `is_employee_discipline_verified`,
+ `passing_year`, `is_passing_year_verified`, `final_year_percentage`, `is_final_year_percentage_verified`, `training_institute`, `is_training_institute_verified`,
+ `training_duration_month`, `is_training_duration_month_verified`, `other_training`, `is_other_training_verified`, `creator_user`)
+ VALUES ('72', 'MCA', '1', 'COMPUTERS', '1', '2019', '1', '70', '1', 'NA', '1', 'NA', '1', 'NA', '1', 'Alekhya');
+INSERT INTO `lms-database`.`candidate_qualification` (`candidate_id`, `degree_name`, `is_degree_name_verified`, `employee_discipline`, `is_employee_discipline_verified`,
+ `passing_year`, `is_passing_year_verified`, `final_year_percentage`, `is_final_year_percentage_verified`, `training_institute`, `is_training_institute_verified`,
+ `training_duration_month`, `is_training_duration_month_verified`, `other_training`, `is_other_training_verified`, `creator_user`)
+ VALUES ('73', 'BE', '1', 'COMPUTERS', '1', '2019', '1', '77', '1', 'NA', '1', 'NA', '1', 'NA', '1', 'Alekhya');
+INSERT INTO `lms-database`.`candidate_qualification` (`candidate_id`, `degree_name`, `is_degree_name_verified`, `employee_discipline`, `is_employee_discipline_verified`,
+ `passing_year`, `is_passing_year_verified`, `final_year_percentage`, `is_final_year_percentage_verified`, `training_institute`, `is_training_institute_verified`,
+ `training_duration_month`, `is_training_duration_month_verified`, `other_training`, `is_other_training_verified`, `creator_user`)
+ VALUES ('74', 'ME', '1', 'ECE', '1', '2019', '1', '70', '1', 'NA', '1', 'NA', '1', 'NA', '1', 'Alekhya');
 
 -- queries to insert and update data in candidate documents table
 
