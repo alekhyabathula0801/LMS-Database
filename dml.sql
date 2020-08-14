@@ -448,7 +448,136 @@ UPDATE `lms-database`.`candidate_bank_details` SET `is_account_num_verified` = '
 INSERT INTO `lms-database`.`candidate_bank_details` (`candidate_id`, `name`, `account_number`, `is_account_num_verified`, `ifsc_code`, `is_ifsc_code_verified`,
 	`pan_number`, `is_pan_number_verified`, `aadhaar_num`, `is_aadhaar_num_verified`, `creator_user`) 
 	VALUES ('7', 'Daya', 'KJH283HJ82921', '1', 'HHHHHY214698', '1', 'GHJ21873H8721', '1', '21379G281764', '1', 'Alekhya');
-
+INSERT INTO `lms-database`.`candidate_bank_details` (`candidate_id`, `name`, `account_number`, `is_account_num_verified`, `ifsc_code`, `is_ifsc_code_verified`,
+ `pan_number`, `is_pan_number_verified`, `aadhaar_num`, `is_aadhaar_num_verified`, `creator_user`) VALUES ('8', 'Shelkeva', '329BUIGY89732', '1', '83247G218213',
+ '1', 'VJ876745676899', '1', '93579783252', '1', 'Alekhya');
+INSERT INTO `lms-database`.`candidate_bank_details` (`candidate_id`, `name`, `account_number`, `is_account_num_verified`, `ifsc_code`, `is_ifsc_code_verified`,
+ `pan_number`, `is_pan_number_verified`, `aadhaar_num`, `is_aadhaar_num_verified`, `creator_user`) VALUES ('9', 'Shrit', 'JK67576G7689', '1', 'JH8756787985', '1',
+ 'GYU78565434568', '1', '2537385673532', '1', 'Alekhya');
+INSERT INTO `lms-database`.`candidate_bank_details` (`candidate_id`, `name`, `account_number`, `is_account_num_verified`, `ifsc_code`, `is_ifsc_code_verified`,
+ `pan_number`, `is_pan_number_verified`, `aadhaar_num`, `is_aadhaar_num_verified`, `creator_user`) VALUES ('10', 'Akshay', 'BJK78567VG76', '1', 'MK7856756578', '1',
+ 'JKHGY674354677', '1', '2178462347821', '1', 'Alekhya');
+INSERT INTO `lms-database`.`candidate_bank_details` (`candidate_id`, `name`, `account_number`, `is_account_num_verified`, `ifsc_code`, `is_ifsc_code_verified`,
+ `pan_number`, `is_pan_number_verified`, `aadhaar_num`, `is_aadhaar_num_verified`, `creator_user`) VALUES ('11', 'Ayush', 'HH78676VG67', '1', 'BNJ897856857', '1',
+ 'VGCFGDS6545689', '1', '243654768634', '1', 'Alekhya');
+INSERT INTO `lms-database`.`candidate_bank_details` (`candidate_id`, `name`, `account_number`, `is_account_num_verified`, `ifsc_code`, `is_ifsc_code_verified`,
+ `pan_number`, `is_pan_number_verified`, `aadhaar_num`, `is_aadhaar_num_verified`, `creator_user`) VALUES ('12', 'Akshay', 'BJ7886HJ876', '1', 'BHJ132456789', '1',
+ 'GVY86564356789', '1', '87324562781', '1', 'Alekhya');
+INSERT INTO `lms-database`.`candidate_bank_details` (`candidate_id`, `name`, `account_number`, `is_account_num_verified`, `ifsc_code`, `is_ifsc_code_verified`,
+ `pan_number`, `is_pan_number_verified`, `aadhaar_num`, `is_aadhaar_num_verified`, `creator_user`) VALUES ('13', 'Ujjwal', 'VG876VJ5678', '1', 'JB978564D567', '1',
+ 'HBGY76VGH78654', '1', '1732521426178', '1', 'Alekhya');
+INSERT INTO `lms-database`.`candidate_bank_details` (`candidate_id`, `name`, `account_number`, `is_account_num_verified`, `ifsc_code`, `is_ifsc_code_verified`,
+ `pan_number`, `is_pan_number_verified`, `aadhaar_num`, `is_aadhaar_num_verified`, `creator_user`) VALUES ('14', 'Sargam', 'DXRF8712491', '1', ' HJ8967GV677', '1',
+ 'HBVGF223456G76', '1', '2784315467128', '1', 'Alekhya');
+ INSERT INTO `lms-database`.`candidate_bank_details` (`candidate_id`, `name`, `account_number`, `is_account_num_verified`, `ifsc_code`, `is_ifsc_code_verified`,
+	`pan_number`, `is_pan_number_verified`, `aadhaar_num`, `is_aadhaar_num_verified`, `creator_user`) 
+	VALUES ('15', 'Teja', 'KJH283J82921', '1', 'HHHHY214698', '1', 'GHJ2173H8721', '1', '2137G281764', '1', 'Alekhya');
+INSERT INTO `lms-database`.`candidate_bank_details` (`candidate_id`, `name`, `account_number`, `is_account_num_verified`, `ifsc_code`, `is_ifsc_code_verified`,
+ `pan_number`, `is_pan_number_verified`, `aadhaar_num`, `is_aadhaar_num_verified`, `creator_user`) VALUES ('16', 'Kalyan', '329BUIGY89032', '1', '03247G218213',
+ '1', 'VJ876745676890', '1', '93570783252', '1', 'Alekhya');
+INSERT INTO `lms-database`.`candidate_bank_details` (`candidate_id`, `name`, `account_number`, `is_account_num_verified`, `ifsc_code`, `is_ifsc_code_verified`,
+ `pan_number`, `is_pan_number_verified`, `aadhaar_num`, `is_aadhaar_num_verified`, `creator_user`) VALUES ('17', 'Antony', 'J67576768L9', '1', 'JH8706787985', '1',
+ 'GYU78565430568', '1', '2537380673532', '1', 'Alekhya');
+INSERT INTO `lms-database`.`candidate_bank_details` (`candidate_id`, `name`, `account_number`, `is_account_num_verified`, `ifsc_code`, `is_ifsc_code_verified`,
+ `pan_number`, `is_pan_number_verified`, `aadhaar_num`, `is_aadhaar_num_verified`, `creator_user`) VALUES ('18', 'Priyanka', 'BJK78567VL76', '1', 'ML7856756578', '1',
+ 'JLHGY674354677', '1', '2170462347821', '1', 'Alekhya');
+INSERT INTO `lms-database`.`candidate_bank_details` (`candidate_id`, `name`, `account_number`, `is_account_num_verified`, `ifsc_code`, `is_ifsc_code_verified`,
+ `pan_number`, `is_pan_number_verified`, `aadhaar_num`, `is_aadhaar_num_verified`, `creator_user`) VALUES ('19', 'Gani', 'HH78676VG07', '1', 'BNL897856857', '1',
+ 'VGCLGDS6545689', '1', '243654068634', '1', 'Alekhya');
+INSERT INTO `lms-database`.`candidate_bank_details` (`candidate_id`, `name`, `account_number`, `is_account_num_verified`, `ifsc_code`, `is_ifsc_code_verified`,
+ `pan_number`, `is_pan_number_verified`, `aadhaar_num`, `is_aadhaar_num_verified`, `creator_user`) VALUES ('20', 'BhagyaSri', 'BJ7880HJ876', '1', 'BHJ132056789', '1',
+ 'GVL86564356789', '1', '87324502781', '1', 'Alekhya');
+INSERT INTO `lms-database`.`candidate_bank_details` (`candidate_id`, `name`, `account_number`, `is_account_num_verified`, `ifsc_code`, `is_ifsc_code_verified`,
+ `pan_number`, `is_pan_number_verified`, `aadhaar_num`, `is_aadhaar_num_verified`, `creator_user`) VALUES ('21', 'Suraj', 'VG870VJ5678', '1', 'JBL978564D567', '1',
+ 'HBGL76VGH78654', '1', '1732521406178', '1', 'Alekhya');
+INSERT INTO `lms-database`.`candidate_bank_details` (`candidate_id`, `name`, `account_number`, `is_account_num_verified`, `ifsc_code`, `is_ifsc_code_verified`,
+ `pan_number`, `is_pan_number_verified`, `aadhaar_num`, `is_aadhaar_num_verified`, `creator_user`) VALUES ('22', 'Sarika', 'DXLF8712491', '1', ' HJ0967GV677', '1',
+ 'HBVLF223456G76', '1', '2784315460128', '1', 'Alekhya');
+INSERT INTO `lms-database`.`candidate_bank_details` (`candidate_id`, `name`, `account_number`, `is_account_num_verified`, `ifsc_code`, `is_ifsc_code_verified`,
+	`pan_number`, `is_pan_number_verified`, `aadhaar_num`, `is_aadhaar_num_verified`, `creator_user`) 
+	VALUES ('23', 'Salina', 'KLH283J82921', '1', 'HHLHY214698', '1', 'GHJ2173L8721', '1', '2130G281764', '1', 'Alekhya');
+INSERT INTO `lms-database`.`candidate_bank_details` (`candidate_id`, `name`, `account_number`, `is_account_num_verified`, `ifsc_code`, `is_ifsc_code_verified`,
+ `pan_number`, `is_pan_number_verified`, `aadhaar_num`, `is_aadhaar_num_verified`, `creator_user`) VALUES ('24', 'Priya', '329BUIGY80032', '1', '03247G218013',
+ '1', 'VJ876740676890', '1', '93570780252', '1', 'Alekhya');
+INSERT INTO `lms-database`.`candidate_bank_details` (`candidate_id`, `name`, `account_number`, `is_account_num_verified`, `ifsc_code`, `is_ifsc_code_verified`,
+ `pan_number`, `is_pan_number_verified`, `aadhaar_num`, `is_aadhaar_num_verified`, `creator_user`) VALUES ('25', 'Vishnu', 'J67576068L9', '1', 'JH870L787985', '1',
+ 'GYU78065430568', '1', '2507380673532', '1', 'Alekhya');
+INSERT INTO `lms-database`.`candidate_bank_details` (`candidate_id`, `name`, `account_number`, `is_account_num_verified`, `ifsc_code`, `is_ifsc_code_verified`,
+ `pan_number`, `is_pan_number_verified`, `aadhaar_num`, `is_aadhaar_num_verified`, `creator_user`) VALUES ('26', 'Dileep', 'BJK78567LL76', '1', 'ML785L756578', '1',
+ 'JLHGY670354677', '1', '2170462047821', '1', 'Alekhya');
+INSERT INTO `lms-database`.`candidate_bank_details` (`candidate_id`, `name`, `account_number`, `is_account_num_verified`, `ifsc_code`, `is_ifsc_code_verified`,
+ `pan_number`, `is_pan_number_verified`, `aadhaar_num`, `is_aadhaar_num_verified`, `creator_user`) VALUES ('27', 'Addyp', 'HH78676VG107', '1', 'BNL897056857', '1',
+ 'VGCLGDS645689', '1', '24654068634', '1', 'Alekhya');
+INSERT INTO `lms-database`.`candidate_bank_details` (`candidate_id`, `name`, `account_number`, `is_account_num_verified`, `ifsc_code`, `is_ifsc_code_verified`,
+ `pan_number`, `is_pan_number_verified`, `aadhaar_num`, `is_aadhaar_num_verified`, `creator_user`) VALUES ('28', 'Prathiksha', 'BJ78801HJ876', '1', 'BHJ132006789', '1',
+ 'GVL8664356789', '1', '87304502781', '1', 'Alekhya');
+INSERT INTO `lms-database`.`candidate_bank_details` (`candidate_id`, `name`, `account_number`, `is_account_num_verified`, `ifsc_code`, `is_ifsc_code_verified`,
+ `pan_number`, `is_pan_number_verified`, `aadhaar_num`, `is_aadhaar_num_verified`, `creator_user`) VALUES ('30', 'Dileep', 'VG870VJ56078', '1', 'JBL97564D567', '1',
+ 'HBGL76VGK78654', '1', '1732520406178', '1', 'Alekhya');
+INSERT INTO `lms-database`.`candidate_bank_details` (`candidate_id`, `name`, `account_number`, `is_account_num_verified`, `ifsc_code`, `is_ifsc_code_verified`,
+ `pan_number`, `is_pan_number_verified`, `aadhaar_num`, `is_aadhaar_num_verified`, `creator_user`) VALUES ('31', 'Surani', 'DXLF8702491', '1', ' HJ0967GV077', '1',
+ 'HBVLF223406G76', '1', '2784015460128', '1', 'Alekhya');
+INSERT INTO `lms-database`.`candidate_bank_details` (`candidate_id`, `name`, `account_number`, `is_account_num_verified`, `ifsc_code`, `is_ifsc_code_verified`,
+	`pan_number`, `is_pan_number_verified`, `aadhaar_num`, `is_aadhaar_num_verified`, `creator_user`) 
+	VALUES ('33', 'Salika', 'KLH283J82021', '1', 'HHLHY014698', '1', 'GHJ2173L8701', '1', '2130G280764', '1', 'Alekhya');
+INSERT INTO `lms-database`.`candidate_bank_details` (`candidate_id`, `name`, `account_number`, `is_account_num_verified`, `ifsc_code`, `is_ifsc_code_verified`,
+ `pan_number`, `is_pan_number_verified`, `aadhaar_num`, `is_aadhaar_num_verified`, `creator_user`) VALUES ('34', 'Priya', '329BUIHY80032', '1', '03247L218013',
+ '1', 'VJ876040676890', '1', '90570780252', '1', 'Alekhya');
+INSERT INTO `lms-database`.`candidate_bank_details` (`candidate_id`, `name`, `account_number`, `is_account_num_verified`, `ifsc_code`, `is_ifsc_code_verified`,
+ `pan_number`, `is_pan_number_verified`, `aadhaar_num`, `is_aadhaar_num_verified`, `creator_user`) VALUES ('35', 'Ajay', 'J67506068L9', '1', 'JH870L707985', '1',
+ 'GYY78065430568', '1', '2507380670532', '1', 'Alekhya');
+INSERT INTO `lms-database`.`candidate_bank_details` (`candidate_id`, `name`, `account_number`, `is_account_num_verified`, `ifsc_code`, `is_ifsc_code_verified`,
+ `pan_number`, `is_pan_number_verified`, `aadhaar_num`, `is_aadhaar_num_verified`, `creator_user`) VALUES ('36', 'Deepu', 'BJK78507LL76', '1', 'ML085L756578', '1',
+ 'JLHGY670350677', '1', '2170460047821', '1', 'Alekhya');
+INSERT INTO `lms-database`.`candidate_bank_details` (`candidate_id`, `name`, `account_number`, `is_account_num_verified`, `ifsc_code`, `is_ifsc_code_verified`,
+ `pan_number`, `is_pan_number_verified`, `aadhaar_num`, `is_aadhaar_num_verified`, `creator_user`) VALUES ('37', 'Addypu', 'HH78676VG100', '1', 'BNP897056857', '1',
+ 'VGCLGDS640689', '1', '24054068634', '1', 'Alekhya');
+INSERT INTO `lms-database`.`candidate_bank_details` (`candidate_id`, `name`, `account_number`, `is_account_num_verified`, `ifsc_code`, `is_ifsc_code_verified`,
+ `pan_number`, `is_pan_number_verified`, `aadhaar_num`, `is_aadhaar_num_verified`, `creator_user`) VALUES ('38', 'Prathiksh', 'BJ78801HL876', '1', 'BHJ132000789', '1',
+ 'GVL8604356789', '1', '87304500781', '1', 'Alekhya');
+INSERT INTO `lms-database`.`candidate_bank_details` (`candidate_id`, `name`, `account_number`, `is_account_num_verified`, `ifsc_code`, `is_ifsc_code_verified`,
+ `pan_number`, `is_pan_number_verified`, `aadhaar_num`, `is_aadhaar_num_verified`, `creator_user`) VALUES ('39', 'Dileep', 'VL870VJ56078', '1', 'JBL97064D567', '1',
+ 'HBGL76LGK78654', '1', '1732520406078', '1', 'Alekhya');
+INSERT INTO `lms-database`.`candidate_bank_details` (`candidate_id`, `name`, `account_number`, `is_account_num_verified`, `ifsc_code`, `is_ifsc_code_verified`,
+ `pan_number`, `is_pan_number_verified`, `aadhaar_num`, `is_aadhaar_num_verified`, `creator_user`) VALUES ('40', 'Surya', 'DXLW8702491', '1', ' HJ0960GV077', '1',
+ 'HBWLF223406G76', '1', '2784015060128', '1', 'Alekhya');
+ INSERT INTO `lms-database`.`candidate_bank_details` (`candidate_id`, `name`, `account_number`, `is_account_num_verified`, `ifsc_code`, `is_ifsc_code_verified`,
+ `pan_number`, `is_pan_number_verified`, `aadhaar_num`, `is_aadhaar_num_verified`, `creator_user`) VALUES ('41', 'Sarika', 'VL870V056078', '1', 'JBL97004D567', '1',
+ 'HBGL76LLK78654', '1', '1732500406078', '1', 'Alekhya');
+INSERT INTO `lms-database`.`candidate_bank_details` (`candidate_id`, `name`, `account_number`, `is_account_num_verified`, `ifsc_code`, `is_ifsc_code_verified`,
+ `pan_number`, `is_pan_number_verified`, `aadhaar_num`, `is_aadhaar_num_verified`, `creator_user`) VALUES ('42', 'Sani', 'DXLW87028491', '1', ' HJ09609GV077', '1',
+ 'HBWLF22406G76', '1', '278401500128', '1', 'Alekhya');
+INSERT INTO `lms-database`.`candidate_bank_details` (`candidate_id`, `name`, `account_number`, `is_account_num_verified`, `ifsc_code`, `is_ifsc_code_verified`,
+	`pan_number`, `is_pan_number_verified`, `aadhaar_num`, `is_aadhaar_num_verified`, `creator_user`) 
+	VALUES ('43', 'Priya', 'KLH203J82021', '1', 'HHLPY014698', '1', 'GHJ2073L8701', '1', '2130G200764', '1', 'Alekhya');
+INSERT INTO `lms-database`.`candidate_bank_details` (`candidate_id`, `name`, `account_number`, `is_account_num_verified`, `ifsc_code`, `is_ifsc_code_verified`,
+ `pan_number`, `is_pan_number_verified`, `aadhaar_num`, `is_aadhaar_num_verified`, `creator_user`) VALUES ('44', 'Vaishu', '329BUI0Y80032', '1', '03247L228013',
+ '1', 'VJ876040076890', '1', '90570080252', '1', 'Alekhya');
+INSERT INTO `lms-database`.`candidate_bank_details` (`candidate_id`, `name`, `account_number`, `is_account_num_verified`, `ifsc_code`, `is_ifsc_code_verified`,
+ `pan_number`, `is_pan_number_verified`, `aadhaar_num`, `is_aadhaar_num_verified`, `creator_user`) VALUES ('45', 'Prathamesh', 'J67006068L9', '1', 'JH870L007985', '1',
+ 'GYY78065430068', '1', '2507380670032', '1', 'Alekhya');
+INSERT INTO `lms-database`.`candidate_bank_details` (`candidate_id`, `name`, `account_number`, `is_account_num_verified`, `ifsc_code`, `is_ifsc_code_verified`,
+ `pan_number`, `is_pan_number_verified`, `aadhaar_num`, `is_aadhaar_num_verified`, `creator_user`) VALUES ('46', 'Kalesh', 'BJK78507LL06', '1', 'ML085L750578', '1',
+ 'JLHGY670300677', '1', '2170060047821', '1', 'Alekhya');
+INSERT INTO `lms-database`.`candidate_bank_details` (`candidate_id`, `name`, `account_number`, `is_account_num_verified`, `ifsc_code`, `is_ifsc_code_verified`,
+ `pan_number`, `is_pan_number_verified`, `aadhaar_num`, `is_aadhaar_num_verified`, `creator_user`) VALUES ('47', 'Kalyani', 'HH78606VG100', '1', 'BNP807056857', '1',
+ 'VGCLGPS640689', '1', '240549868634', '1', 'Alekhya');
+INSERT INTO `lms-database`.`candidate_bank_details` (`candidate_id`, `name`, `account_number`, `is_account_num_verified`, `ifsc_code`, `is_ifsc_code_verified`,
+ `pan_number`, `is_pan_number_verified`, `aadhaar_num`, `is_aadhaar_num_verified`, `creator_user`) VALUES ('48', 'Sadhika', 'BJ78001HL876', '1', 'BHJ130000789', '1',
+ 'GVL8604306789', '1', '87300500781', '1', 'Alekhya');
+INSERT INTO `lms-database`.`candidate_bank_details` (`candidate_id`, `name`, `account_number`, `is_account_num_verified`, `ifsc_code`, `is_ifsc_code_verified`,
+ `pan_number`, `is_pan_number_verified`, `aadhaar_num`, `is_aadhaar_num_verified`, `creator_user`) VALUES ('49', 'Deepika', 'VL8700J56078', '1', 'JBL97004D567', '1',
+ 'HBGL76LGPU78654', '1', '1702520406078', '1', 'Alekhya');
+INSERT INTO `lms-database`.`candidate_bank_details` (`candidate_id`, `name`, `account_number`, `is_account_num_verified`, `ifsc_code`, `is_ifsc_code_verified`,
+ `pan_number`, `is_pan_number_verified`, `aadhaar_num`, `is_aadhaar_num_verified`, `creator_user`) VALUES ('50', 'Surya', 'DXLW8O02491', '1', ' HJ0U60GV077', '1',
+ 'HBWLF223406I76', '1', '2780015060128', '1', 'Alekhya');
+  INSERT INTO `lms-database`.`candidate_bank_details` (`candidate_id`, `name`, `account_number`, `is_account_num_verified`, `ifsc_code`, `is_ifsc_code_verified`,
+ `pan_number`, `is_pan_number_verified`, `aadhaar_num`, `is_aadhaar_num_verified`, `creator_user`) VALUES ('51', 'Sarika', 'VL8700J50078', '1', 'JBL97004PO567', '1',
+ 'HBGL70LGPU78654', '1', '1702500406078', '1', 'Alekhya');
+INSERT INTO `lms-database`.`candidate_bank_details` (`candidate_id`, `name`, `account_number`, `is_account_num_verified`, `ifsc_code`, `is_ifsc_code_verified`,
+ `pan_number`, `is_pan_number_verified`, `aadhaar_num`, `is_aadhaar_num_verified`, `creator_user`) VALUES ('52', 'Revathi', 'DXLIOW8O02491', '1', ' HJ0U6Y0GV077', '1',
+ 'HBWLFP23406I76', '1', '278P015060128', '1', 'Alekhya');
+ 
 -- queries to insert and update data in candidate qualification table
 
 INSERT INTO `lms-database`.`candidate_qualification` (`candidate_id`, `degree_name`, `employee_discipline`, `passing_year`, `final_year_percentage`, 
