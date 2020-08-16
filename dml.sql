@@ -1313,6 +1313,13 @@ INSERT INTO `lms-database`.`candidate_stack_assignment` (`requirement_id`, `cand
  VALUES ('8', '73', '2020-02-01', '2020-06-01', 'Alekhya');
 INSERT INTO `lms-database`.`candidate_stack_assignment` (`requirement_id`, `candidate_id`, `assign_date`, `completed_date`, `creator_user`)
  VALUES ('8', '74', '2020-02-01', '2020-06-01', 'Alekhya');
+ 
+UPDATE `lms-database`.`candidate_stack_assignment` SET `status` = 'Inactive' WHERE (`id` = '62');
+UPDATE `lms-database`.`candidate_stack_assignment` SET `status` = 'Inactive' WHERE (`id` = '61');
+UPDATE `lms-database`.`candidate_stack_assignment` SET `status` = 'Inactive' WHERE (`id` = '60');
+UPDATE `lms-database`.`candidate_stack_assignment` SET `status` = 'Inactive' WHERE (`id` = '59');
+UPDATE `lms-database`.`candidate_stack_assignment` SET `status` = 'Inactive' WHERE (`id` = '5');
+
 
 -- query to insert data into user engagement table 
 
