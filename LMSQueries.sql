@@ -22,6 +22,16 @@ JOIN tech_stack
 ON mentor_tech_stack.tech_stack_id = tech_stack.id
 WHERE tech_stack.tech_name = "Java";
 
+-- query to find who are absent
+
+SELECT concat(fellowship_candidate.first_name," ", fellowship_candidate.last_name) AS candidate_name
+FROM fellowship_candidate
+JOIN user_engagement_mis 
+ON fellowship_candidate.id = user_engagement_mis.candidate_id
+JOIN candidate_stack_assignment
+ON fellowship_candidate.id = candidate_stack_assignment.candidate_id
+WHERE user_engagement_mis.boot_time IS NULL AND candidate_stack_assignment.status = 'Active';
+
 -- 7. query to find candidates whose technology is not assigned
 
 SELECT fellowship_candidate.first_name AS candidate_name
