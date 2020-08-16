@@ -1320,6 +1320,11 @@ UPDATE `lms-database`.`candidate_stack_assignment` SET `status` = 'Inactive' WHE
 UPDATE `lms-database`.`candidate_stack_assignment` SET `status` = 'Inactive' WHERE (`id` = '59');
 UPDATE `lms-database`.`candidate_stack_assignment` SET `status` = 'Inactive' WHERE (`id` = '5');
 
+UPDATE `lms-database`.`candidate_stack_assignment` SET `status` = 'Completed' WHERE (`id` = '5');
+UPDATE `lms-database`.`candidate_stack_assignment` SET `status` = 'Completed' WHERE (`id` = '59');
+UPDATE `lms-database`.`candidate_stack_assignment` SET `status` = 'Completed' WHERE (`id` = '60');
+UPDATE `lms-database`.`candidate_stack_assignment` SET `status` = 'Completed' WHERE (`id` = '61');
+UPDATE `lms-database`.`candidate_stack_assignment` SET `status` = 'Completed' WHERE (`id` = '62');
 
 -- query to insert data into user engagement table 
 
