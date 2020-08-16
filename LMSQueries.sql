@@ -42,6 +42,14 @@ JOIN candidate_stack_assignment
 ON fellowship_candidate.id = candidate_stack_assignment.candidate_id
 WHERE user_engagement_mis.boot_time IS NOT NULL;
 
+-- query to find candidates who came early
+
+SELECT DISTINCT concat(fellowship_candidate.first_name," ", fellowship_candidate.last_name) AS candidate_name, fellowship_candidate.id AS candidate_id
+FROM fellowship_candidate
+JOIN user_engagement_mis 
+ON fellowship_candidate.id = user_engagement_mis.candidate_id
+WHERE TIME(user_engagement_mis.date_time) < '09:00:00';
+
 -- 7. query to find candidates whose technology is not assigned
 
 SELECT fellowship_candidate.first_name AS candidate_name
