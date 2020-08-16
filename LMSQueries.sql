@@ -112,7 +112,7 @@ SELECT first_name AS candidate_name, datediff(candidate_stack_assignment.complet
 FROM fellowship_candidate
 JOIN candidate_stack_assignment
 ON fellowship_candidate.id = candidate_stack_assignment.candidate_id
-WHERE fellowship_candidate.id = 2;
+WHERE fellowship_candidate.id = 2 AND candidate_stack_assignment.status = 'Active';
 
 -- 19. query to find number of days remaining by candidate id = 6
 
@@ -120,7 +120,7 @@ SELECT first_name AS candidate_name, datediff(candidate_stack_assignment.complet
 FROM fellowship_candidate
 JOIN candidate_stack_assignment
 ON fellowship_candidate.id = candidate_stack_assignment.candidate_id
-WHERE fellowship_candidate.id = 6;
+WHERE fellowship_candidate.id = 6 AND candidate_stack_assignment.status = 'Active';
 
 -- 20. query to find deployed candidates
 
