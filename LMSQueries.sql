@@ -42,13 +42,73 @@ JOIN candidate_stack_assignment
 ON fellowship_candidate.id = candidate_stack_assignment.candidate_id
 WHERE user_engagement_mis.boot_time IS NOT NULL;
 
+-- 4. query to find candidates who came late
+
+DELIMITER //
+CREATE PROCEDURE `getCandidatesWhoAreLate`()
+BEGIN
+	DECLARE finished INT DEFAULT 0;
+	DECLARE candidate_name varchar(20) DEFAULT "";
+	DECLARE candidate_ids INT DEFAULT NULL;
+	DECLARE candidate_date_time TIME DEFAULT NULL;
+	DECLARE previous_id INT DEFAULT 0;
+
+	DECLARE candidates_came_late CURSOR FOR
+	SELECT concat(fellowship_candidate.first_name," ", fellowship_candidate.last_name) AS candidate_name, fellowship_candidate.id AS candidate_id,
+		user_engagement_mis.date_time
+	FROM fellowship_candidate
+	JOIN user_engagement_mis 
+	ON fellowship_candidate.id = user_engagement_mis.candidate_id
+	WHERE user_engagement_mis.date_time IS NOT NULL
+	ORDER BY fellowship_candidate.id;
+
+	DECLARE CONTINUE HANDLER FOR NOT FOUND SET finished = 1;
+
+	DROP TABLE IF EXISTS `late_candidate`;
+    
+	CREATE TABLE `late_candidate` (
+	`id` INT NOT NULL AUTO_INCREMENT,
+	`candidate_id` INT NOT NULL,
+	`candidate_name` VARCHAR(20),
+	`candidate_entry_stamp` TIMESTAMP NOT NULL,
+	PRIMARY KEY (`id`),
+    INDEX `fk_candidate_id_late_candidate_idx` (`candidate_id` ASC) VISIBLE,
+	CONSTRAINT `fk_candidate_id_late_candidate`
+		FOREIGN KEY (`candidate_id`)
+		REFERENCES `lms-database`.`fellowship_candidate` (`id`)
+		ON DELETE NO ACTION
+		ON UPDATE NO ACTION
+	);
+
+	OPEN candidates_came_late;
+		getCandidate : LOOP
+			FETCH candidates_came_late INTO candidate_name, candidate_ids, candidate_date_time;
+			IF finished = 1 THEN 
+				LEAVE getCandidate;
+			END IF;
+			IF previous_id != candidate_ids THEN
+				IF TIME(candidate_date_time) > '09:00:00' THEN
+					INSERT INTO `late_candidate` (`candidate_id`,`candidate_name`,`candidate_entry_stamp`)
+					VALUES (candidate_ids, candidate_name, candidate_date_time);
+				END IF;
+				SET previous_id = candidate_ids;
+			END IF;
+		END LOOP getCandidate;
+	CLOSE candidates_came_late;
+    
+END//
+DELIMITER ;
+
+CALL getCandidatesWhoAreLate();
+SELECT * FROM late_candidate;
+
 -- 6. query to find candidates who came early
 
 SELECT DISTINCT concat(fellowship_candidate.first_name," ", fellowship_candidate.last_name) AS candidate_name, fellowship_candidate.id AS candidate_id
 FROM fellowship_candidate
 JOIN user_engagement_mis 
 ON fellowship_candidate.id = user_engagement_mis.candidate_id
-WHERE TIME(user_engagement_mis.date_time) < '09:00:00';
+WHERE TIME(user_engagement_mis.date_time) <= '09:00:00';
 
 -- query to find candidates who went late
 
